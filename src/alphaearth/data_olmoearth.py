@@ -265,6 +265,9 @@ def create_olmoearth_dataloader(
     num_bands: int = 7,
     cache_index: bool = True,  # 新增参数
     cache_dir: Optional[str] = "./cache",  # 新增参数
+    pin_memory: bool = True,
+    persistent_workers: Optional[bool] = None,
+    prefetch_factor: int = 2,
 ) -> DataLoader:
     dataset = OlmoEarthDataset(
         data_dir=data_dir,
@@ -312,12 +315,21 @@ def create_olmoearth_dataloader(
             "valid_periods": [sample["valid_period"] for sample in batch],
         }
     
-    return DataLoader(
+    if persistent_workers is None:
+        persistent_workers = num_workers > 0
+    if num_workers == 0 and persistent_workers:
+        persistent_workers = False
+
+    dataloader_kwargs = dict(
         dataset,
         batch_size=batch_size,
         shuffle=shuffle,
         num_workers=num_workers,
         collate_fn=collate_fn,
-        pin_memory=True,
-        persistent_workers=num_workers > 0,
+        pin_memory=pin_memory,
+        persistent_workers=persistent_workers,
     )
+    if num_workers > 0:
+        dataloader_kwargs["prefetch_factor"] = prefetch_factor
+
+    return DataLoader(**dataloader_kwargs)

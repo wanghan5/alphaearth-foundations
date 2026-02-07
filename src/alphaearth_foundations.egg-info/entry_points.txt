@@ -1,0 +1,3 @@
+[console_scripts]
+alphaearth-train = src.alphaearth.run_train:main
+alphaearth-train-olmoearth = src.alphaearth.run_train_olmoearth_dataset:main

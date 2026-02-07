@@ -1,6 +1,7 @@
 import argparse
 from pathlib import Path
 import torch
+import os
 from alphaearth.architecture.aef_module import AlphaEarthFoundations
 from alphaearth.training import create_trainer
 from alphaearth.data_olmoearth import create_olmoearth_dataloader
@@ -86,6 +87,41 @@ def main():
         default=None,
         help="Device to use (cuda/cpu). Auto-detected if not provided",
     )
+    parser.add_argument(
+        "--use_wandb",
+        action="store_true",
+        help="Use Weights & Biases logging",
+    )
+    parser.add_argument(
+        "--wandb_project",
+        type=str,
+        default="alphaearth-foundations",
+        help="Weights & Biases project name",
+    )
+    parser.add_argument(
+        "--wandb_run_name",
+        type=str,
+        default=None,
+        help="Weights & Biases run name",
+    )
+    parser.add_argument(
+        "--resume_from",
+        type=str,
+        default=None,
+        help="Resume training from a checkpoint path",
+    )
+    parser.add_argument(
+        "--cache_index",
+        action="store_true",
+        default=True,
+        help="Cache the data index to avoid re-indexing tar files",
+    )
+    parser.add_argument(
+        "--cache_dir",
+        type=str,
+        default="./cache",
+        help="Directory to store cached data indices",
+    )
     
     args = parser.parse_args()
     
@@ -105,6 +141,8 @@ def main():
         normalize=True,
         shuffle=True,
         num_bands=args.landsat_bands,
+        cache_index=args.cache_index,
+        cache_dir=args.cache_dir,
     )
     
     dataset_size = len(dataloader.dataset)
@@ -118,11 +156,37 @@ def main():
     print(f"Dataset: {dataset_size} samples, {steps_per_epoch} steps/epoch")
     print(f"Training for {max_steps} steps ({max_steps / steps_per_epoch:.2f} epochs)")
     
-    model = AlphaEarthFoundations(
-        model_size="small",
-        input_sources={"landsat": args.landsat_bands},
-        decode_sources={"landsat": args.landsat_bands},
-    )
+    # 加载模型和可能的检查点
+    if args.resume_from:
+        checkpoint_path = Path(args.resume_from)
+        if not checkpoint_path.exists():
+            raise FileNotFoundError(f"Checkpoint not found: {checkpoint_path}")
+        
+        print(f"Resuming training from checkpoint: {args.resume_from}")
+        checkpoint = torch.load(args.resume_from)
+        
+        # 重建模型
+        model = AlphaEarthFoundations(
+            model_size="small",
+            input_sources={"landsat": args.landsat_bands},
+            decode_sources={"landsat": args.landsat_bands},
+        )
+        
+        # 加载模型权重
+        model.load_state_dict(checkpoint['model_state_dict'])
+        
+        # 确定剩余训练步数
+        start_step = checkpoint['step']
+        remaining_steps = max_steps - start_step
+        print(f"Resuming from step {start_step}, {remaining_steps} steps remaining")
+    else:
+        print("Starting training from scratch")
+        model = AlphaEarthFoundations(
+            model_size="small",
+            input_sources={"landsat": args.landsat_bands},
+            decode_sources={"landsat": args.landsat_bands},
+        )
+        start_step = 0
     
     print("\n" + "="*80)
     print("MODEL INFORMATION")
@@ -145,7 +209,7 @@ def main():
     
     print("\n" + "-"*80)
     print("MODEL ARCHITECTURE")
-    print("-"*80)
+    print("-" * 80)
     print(model)
     print("="*80 + "\n")
     
@@ -156,20 +220,30 @@ def main():
         lr=args.lr,
         device=args.device,
         output_dir=args.output_dir,
+        use_wandb=args.use_wandb,
+        wandb_project=args.wandb_project,
+        wandb_run_name=args.wandb_run_name,
     )
     
+    # 设置训练步数
     trainer.max_steps = max_steps
     trainer.warmup_steps = args.warmup_steps
     
-    print(f"Starting training for {args.max_steps} steps...")
+    print(f"Starting training for {max_steps} steps...")
     print(f"Output directory: {args.output_dir}")
+    if args.use_wandb:
+        print(f"W&B logging enabled - Project: {args.wandb_project}, Run: {args.wandb_run_name or 'default'}")
     
     Path(args.output_dir).mkdir(parents=True, exist_ok=True)
-    trainer.train(max_steps=args.max_steps, log_every=args.log_every)
+    
+    # 如果是从检查点恢复，则调整训练步数
+    if start_step > 0:
+        trainer.train(max_steps=remaining_steps, log_every=args.log_every)
+    else:
+        trainer.train(max_steps=args.max_steps, log_every=args.log_every)
     
     print("Training run finished.")
 
 
 if __name__ == "__main__":
     main()
-

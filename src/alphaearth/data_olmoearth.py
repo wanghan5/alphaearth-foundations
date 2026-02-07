@@ -9,6 +9,8 @@ from tqdm import tqdm
 from scipy.ndimage import zoom
 import rasterio
 from rasterio.io import MemoryFile
+import pickle
+import hashlib
 
 
 class OlmoEarthDataset(Dataset):
@@ -20,6 +22,7 @@ class OlmoEarthDataset(Dataset):
         normalize: bool = True,
         cache_dir: Optional[str] = None,
         num_bands: int = 7,
+        cache_index: bool = True,  # 新增参数：是否缓存索引
     ):
         self.data_dir = Path(data_dir)
         self.patch_size = patch_size
@@ -27,6 +30,7 @@ class OlmoEarthDataset(Dataset):
         self.cache_dir = Path(cache_dir) if cache_dir else None
         self.num_bands = num_bands
         self.tar_cache = {}
+        self.cache_index = cache_index
         
         if csv_path is None:
             parent_dir = self.data_dir.parent
@@ -50,6 +54,42 @@ class OlmoEarthDataset(Dataset):
         
         self.tar_files = tar_files
         
+        # 创建缓存路径
+        if self.cache_index and self.cache_dir:
+            self.cache_dir.mkdir(parents=True, exist_ok=True)
+            # 生成基于数据路径和参数的哈希值作为缓存文件名
+            cache_key = f"{str(self.data_dir)}_{csv_path}_{len(tar_files)}"
+            cache_hash = hashlib.md5(cache_key.encode()).hexdigest()
+            self.index_cache_path = self.cache_dir / f"index_cache_{cache_hash}.pkl"
+            
+            # 尝试加载缓存的索引
+            if self.index_cache_path.exists():
+                print(f"Loading cached index from {self.index_cache_path}...")
+                with open(self.index_cache_path, 'rb') as f:
+                    cached_data = pickle.load(f)
+                    self.samples = cached_data['samples']
+                    print(f"Loaded cached index with {len(self.samples)} samples")
+            else:
+                print("Index cache not found, creating new index...")
+                self._build_index()
+                print(f"Saving index cache to {self.index_cache_path}...")
+                with open(self.index_cache_path, 'wb') as f:
+                    pickle.dump({'samples': self.samples}, f)
+        else:
+            self._build_index()
+        
+        print(f"Found {len(self.samples)} samples across {len(self.tar_files)} tar files")
+        
+        if len(self.samples) != len(self.metadata):
+            print(f"Warning: {len(self.samples)} samples in tar files but {len(self.metadata)} in CSV")
+            min_len = min(len(self.samples), len(self.metadata))
+            if min_len < len(self.samples):
+                self.samples = self.samples[:min_len]
+            if min_len < len(self.metadata):
+                self.metadata = self.metadata.iloc[:min_len]
+    
+    def _build_index(self):
+        """构建数据索引"""
         self.samples = []
         print("Indexing tar files...")
         for tar_idx, tar_path in enumerate(tqdm(self.tar_files, desc="Indexing")):
@@ -62,16 +102,6 @@ class OlmoEarthDataset(Dataset):
                                              'data' in m.name.lower())]
                 for member in members:
                     self.samples.append((tar_idx, member.name))
-        
-        print(f"Found {len(self.samples)} samples across {len(self.tar_files)} tar files")
-        
-        if len(self.samples) != len(self.metadata):
-            print(f"Warning: {len(self.samples)} samples in tar files but {len(self.metadata)} in CSV")
-            min_len = min(len(self.samples), len(self.metadata))
-            if min_len < len(self.samples):
-                self.samples = self.samples[:min_len]
-            if min_len < len(self.metadata):
-                self.metadata = self.metadata.iloc[:min_len]
     
     def _get_tar_file(self, tar_idx: int) -> tarfile.TarFile:
         if tar_idx not in self.tar_cache:
@@ -233,6 +263,8 @@ def create_olmoearth_dataloader(
     normalize: bool = True,
     shuffle: bool = True,
     num_bands: int = 7,
+    cache_index: bool = True,  # 新增参数
+    cache_dir: Optional[str] = "./cache",  # 新增参数
 ) -> DataLoader:
     dataset = OlmoEarthDataset(
         data_dir=data_dir,
@@ -240,6 +272,8 @@ def create_olmoearth_dataloader(
         patch_size=patch_size,
         normalize=normalize,
         num_bands=num_bands,
+        cache_index=cache_index,
+        cache_dir=cache_dir,
     )
     
     def collate_fn(batch: List[Dict[str, Any]]) -> Dict[str, Any]:
@@ -287,4 +321,3 @@ def create_olmoearth_dataloader(
         pin_memory=True,
         persistent_workers=num_workers > 0,
     )
-

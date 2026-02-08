@@ -28,7 +28,8 @@ class Trainer:
                  output_dir: Optional[str] = None,
                  use_wandb: bool = False,  # 添加wandb选项
                  wandb_project: str = "alphaearth-foundations",  # wandb项目名称
-                 wandb_run_name: Optional[str] = None):  # wandb运行名称
+                 wandb_run_name: Optional[str] = None,  # wandb运行名称
+                 grad_accum_steps: int = 1):
         self.model = model
         self.dataloader = dataloader
         self.text_adapter = text_adapter
@@ -44,6 +45,7 @@ class Trainer:
         self.output_dir = output_dir
         self.max_steps = 1000
         self.warmup_steps = 0
+        self.grad_accum_steps = max(1, grad_accum_steps)
         # Track losses for visualization
         self.loss_history = {
             'steps': [],
@@ -74,6 +76,7 @@ class Trainer:
                         "max_steps": self.max_steps,
                         "device": str(self.device),
                         "dataset_size": len(dataloader.dataset) if hasattr(dataloader, 'dataset') else 'unknown',
+                        "grad_accum_steps": self.grad_accum_steps,
                     }
                 )
             except Exception as e:
@@ -111,6 +114,8 @@ class Trainer:
 
         pbar = tqdm(range(1, steps + 1), desc="Training", unit="step")
         start_time = time.time()
+        accum_counter = 0
+        self.optim.zero_grad(set_to_none=True)
         
         try:
             for step in pbar:
@@ -157,9 +162,12 @@ class Trainer:
                 losses = self.loss_fn(outputs_for_loss)
                 loss = losses['total']
 
-                self.optim.zero_grad(set_to_none=True)
-                loss.backward()
-                self.optim.step()
+                (loss / self.grad_accum_steps).backward()
+                accum_counter += 1
+                if accum_counter >= self.grad_accum_steps or step == steps:
+                    self.optim.step()
+                    self.optim.zero_grad(set_to_none=True)
+                    accum_counter = 0
 
                 self.loss_history['steps'].append(step)
                 self.loss_history['total'].append(float(loss))
@@ -346,7 +354,8 @@ def create_trainer(model: AlphaEarthFoundations,
                    output_dir: Optional[str] = None,
                    use_wandb: bool = False,  # 添加wandb选项参数
                    wandb_project: str = "alphaearth-foundations",
-                   wandb_run_name: Optional[str] = None) -> Trainer:
+                   wandb_run_name: Optional[str] = None,
+                   grad_accum_steps: int = 1) -> Trainer:
     return Trainer(
         model=model, 
         dataloader=dataloader, 
@@ -356,5 +365,6 @@ def create_trainer(model: AlphaEarthFoundations,
         output_dir=output_dir,
         use_wandb=use_wandb,
         wandb_project=wandb_project,
-        wandb_run_name=wandb_run_name
+        wandb_run_name=wandb_run_name,
+        grad_accum_steps=grad_accum_steps,
     )

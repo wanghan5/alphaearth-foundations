@@ -320,15 +320,15 @@ def create_olmoearth_dataloader(
     if num_workers == 0 and persistent_workers:
         persistent_workers = False
 
-    dataloader_kwargs = dict(
-        dataset,
-        batch_size=batch_size,
-        shuffle=shuffle,
-        num_workers=num_workers,
-        collate_fn=collate_fn,
-        pin_memory=pin_memory,
-        persistent_workers=persistent_workers,
-    )
+    dataloader_kwargs = {
+        "dataset": dataset,
+        "batch_size": batch_size,
+        "shuffle": shuffle,
+        "num_workers": num_workers,
+        "collate_fn": collate_fn,
+        "pin_memory": pin_memory,
+        "persistent_workers": persistent_workers,
+    }
     if num_workers > 0:
         dataloader_kwargs["prefetch_factor"] = prefetch_factor
 

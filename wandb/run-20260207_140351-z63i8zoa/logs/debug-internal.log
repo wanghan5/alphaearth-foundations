@@ -1,0 +1,20 @@
+{"time":"2026-02-07T14:03:51.609721473Z","level":"INFO","msg":"stream: starting","core version":"0.24.2"}
+{"time":"2026-02-07T14:03:52.070608672Z","level":"INFO","msg":"stream: created new stream","id":"z63i8zoa"}
+{"time":"2026-02-07T14:03:52.071045647Z","level":"INFO","msg":"handler: started","stream_id":"z63i8zoa"}
+{"time":"2026-02-07T14:03:52.071249469Z","level":"INFO","msg":"stream: started","id":"z63i8zoa"}
+{"time":"2026-02-07T14:03:52.071388822Z","level":"INFO","msg":"writer: started","stream_id":"z63i8zoa"}
+{"time":"2026-02-07T14:03:52.071475005Z","level":"INFO","msg":"sender: started","stream_id":"z63i8zoa"}
+{"time":"2026-02-07T14:05:00.436331967Z","level":"ERROR","msg":"sender: sendSummary called after exit"}
+{"time":"2026-02-07T14:05:00.440715831Z","level":"WARN","msg":"sender: received Exit record more than once, ignoring"}
+{"time":"2026-02-07T14:05:00.440736395Z","level":"ERROR","msg":"sender: sendSummary called after exit"}
+{"time":"2026-02-07T14:05:00.440745027Z","level":"WARN","msg":"sender: received Exit record more than once, ignoring"}
+{"time":"2026-02-07T14:05:00.440981583Z","level":"ERROR","msg":"sender: sendSummary called after exit"}
+{"time":"2026-02-07T14:05:00.440990636Z","level":"WARN","msg":"sender: received Exit record more than once, ignoring"}
+{"time":"2026-02-07T14:05:00.441418114Z","level":"ERROR","msg":"sender: sendSummary called after exit"}
+{"time":"2026-02-07T14:05:00.441476663Z","level":"WARN","msg":"sender: received Exit record more than once, ignoring"}
+{"time":"2026-02-07T14:05:01.069257771Z","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2026-02-07T14:05:01.349885694Z","level":"INFO","msg":"handler: operation stats","stats":{}}
+{"time":"2026-02-07T14:05:01.356376832Z","level":"INFO","msg":"stream: closing","id":"z63i8zoa"}
+{"time":"2026-02-07T14:05:01.356405626Z","level":"INFO","msg":"handler: closed","stream_id":"z63i8zoa"}
+{"time":"2026-02-07T14:05:01.356635036Z","level":"INFO","msg":"sender: closed","stream_id":"z63i8zoa"}
+{"time":"2026-02-07T14:05:01.356654903Z","level":"INFO","msg":"stream: closed","id":"z63i8zoa"}

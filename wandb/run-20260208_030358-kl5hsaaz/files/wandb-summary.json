@@ -1,0 +1,1 @@
+{"consistency_loss":-2.143474375770893e-08,"total_loss":0.04467535391449928,"_runtime":14899.384413793,"time_per_step":0.31142091751098633,"_step":3656,"learning_rate":0.0001,"reconstruction_loss":0.04338197410106659,"uniformity_loss":0.025867614895105362,"clip_loss":0,"step":3656,"_wandb":{"runtime":14899},"_timestamp":1.7705237601260083e+09}

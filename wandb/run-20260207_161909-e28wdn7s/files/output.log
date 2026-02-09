@@ -1,0 +1,1469 @@
+Starting training for 20000 steps...
+Output directory: ./outputs_olmoearth
+W&B logging enabled - Project: alpha-earth-foundations, Run: first-2026-02-08
+Training:   0%|                                                                                                         | 0/20000 [00:00<?, ?step/s]/root/alphaearth-foundations/src/alphaearth/training.py:165: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:836.)
+  self.loss_history['total'].append(float(loss))
+Training:   2%|▉                                                        | 319/20000 [28:32<39:47,  8.24step/s, recon_loss=0.1320, total_loss=0.1753]
+
+step 00020/20000 (0.1%) | total 0.2635 | recon 0.2136 | uni 0.9986 | cons 0.0001 | clip 0.0000 | ETA: 390.42h (0.01 steps/s)
+
+step 00040/20000 (0.2%) | total 0.2359 | recon 0.1860 | uni 0.9976 | cons -0.0000 | clip 0.0000 | ETA: 232.11h (0.02 steps/s)
+
+step 00060/20000 (0.3%) | total 0.3072 | recon 0.2574 | uni 0.9967 | cons -0.0000 | clip 0.0000 | ETA: 154.83h (0.04 steps/s)
+
+step 00080/20000 (0.4%) | total 0.1814 | recon 0.1279 | uni 0.9881 | cons 0.2079 | clip 0.0000 | ETA: 116.19h (0.05 steps/s)
+
+step 00100/20000 (0.5%) | total 0.2451 | recon 0.1958 | uni 0.9857 | cons -0.0000 | clip 0.0000 | ETA: 93.02h (0.06 steps/s)
+
+step 00120/20000 (0.6%) | total 0.2142 | recon 0.1617 | uni 0.9863 | cons 0.1570 | clip 0.0000 | ETA: 77.57h (0.07 steps/s)
+
+step 00140/20000 (0.7%) | total 0.2089 | recon 0.1599 | uni 0.9798 | cons -0.0000 | clip 0.0000 | ETA: 66.53h (0.08 steps/s)
+
+step 00160/20000 (0.8%) | total 0.2597 | recon 0.2063 | uni 0.9714 | cons 0.2437 | clip 0.0000 | ETA: 58.25h (0.09 steps/s)
+
+step 00180/20000 (0.9%) | total 0.2179 | recon 0.1716 | uni 0.9266 | cons -0.0000 | clip 0.0000 | ETA: 51.81h (0.11 steps/s)
+
+step 00200/20000 (1.0%) | total 0.2091 | recon 0.1615 | uni 0.9288 | cons 0.0606 | clip 0.0000 | ETA: 46.66h (0.12 steps/s)
+
+step 00220/20000 (1.1%) | total 0.2416 | recon 0.1926 | uni 0.9487 | cons 0.0749 | clip 0.0000 | ETA: 42.43h (0.13 steps/s)
+
+step 00240/20000 (1.2%) | total 0.1769 | recon 0.1290 | uni 0.9578 | cons -0.0000 | clip 0.0000 | ETA: 38.92h (0.14 steps/s)
+
+step 00260/20000 (1.3%) | total 0.1812 | recon 0.1337 | uni 0.9155 | cons 0.0883 | clip 0.0000 | ETA: 35.95h (0.15 steps/s)
+
+step 00280/20000 (1.4%) | total 0.1357 | recon 0.0899 | uni 0.9146 | cons -0.0000 | clip 0.0000 | ETA: 33.40h (0.16 steps/s)
+
+step 00300/20000 (1.5%) | total 0.1477 | recon 0.1000 | uni 0.8753 | cons 0.1986 | clip 0.0000 | ETA: 31.19h (0.18 steps/s)
+
+step 00320/20000 (1.6%) | total 0.1753 | recon 0.1320 | uni 0.8655 | cons -0.0000 | clip 0.0000 | ETA: 29.26h (0.19 steps/s)
+
+step 00340/20000 (1.7%) | total 0.1951 | recon 0.1453 | uni 0.8701 | cons 0.3154 | clip 0.0000 | ETA: 27.55h (0.20 steps/s)
+
+step 00360/20000 (1.8%) | total 0.2185 | recon 0.1798 | uni 0.7729 | cons -0.0000 | clip 0.0000 | ETA: 26.03h (0.21 steps/s)
+
+step 00380/20000 (1.9%) | total 0.1559 | recon 0.1081 | uni 0.9571 | cons -0.0000 | clip 0.0000 | ETA: 24.68h (0.22 steps/s)
+
+step 00400/20000 (2.0%) | total 0.1336 | recon 0.0924 | uni 0.8225 | cons -0.0000 | clip 0.0000 | ETA: 23.46h (0.23 steps/s)
+
+step 00420/20000 (2.1%) | total 0.1748 | recon 0.1307 | uni 0.8809 | cons -0.0000 | clip 0.0000 | ETA: 22.35h (0.24 steps/s)
+
+step 00440/20000 (2.2%) | total 0.1318 | recon 0.0871 | uni 0.8931 | cons -0.0000 | clip 0.0000 | ETA: 21.35h (0.25 steps/s)
+
+step 00460/20000 (2.3%) | total 0.1359 | recon 0.0960 | uni 0.7985 | cons -0.0000 | clip 0.0000 | ETA: 20.43h (0.27 steps/s)
+
+step 00480/20000 (2.4%) | total 0.1542 | recon 0.1074 | uni 0.8510 | cons 0.2132 | clip 0.0000 | ETA: 19.59h (0.28 steps/s)
+
+step 00500/20000 (2.5%) | total 0.1630 | recon 0.1268 | uni 0.7240 | cons -0.0000 | clip 0.0000 | ETA: 18.81h (0.29 steps/s)
+
+step 00520/20000 (2.6%) | total 0.1669 | recon 0.1331 | uni 0.6765 | cons -0.0000 | clip 0.0000 | ETA: 18.10h (0.30 steps/s)
+
+step 00540/20000 (2.7%) | total 0.1609 | recon 0.1298 | uni 0.6217 | cons -0.0000 | clip 0.0000 | ETA: 17.44h (0.31 steps/s)
+
+step 00560/20000 (2.8%) | total 0.1822 | recon 0.1546 | uni 0.5506 | cons -0.0000 | clip 0.0000 | ETA: 16.83h (0.32 steps/s)
+
+step 00580/20000 (2.9%) | total 0.1615 | recon 0.1266 | uni 0.6309 | cons 0.1672 | clip 0.0000 | ETA: 16.26h (0.33 steps/s)
+
+step 00600/20000 (3.0%) | total 0.2056 | recon 0.1737 | uni 0.6386 | cons -0.0000 | clip 0.0000 | ETA: 15.72h (0.34 steps/s)
+
+step 00620/20000 (3.1%) | total 0.1418 | recon 0.1094 | uni 0.6471 | cons -0.0000 | clip 0.0000 | ETA: 15.23h (0.35 steps/s)
+
+step 00640/20000 (3.2%) | total 0.1976 | recon 0.1622 | uni 0.7077 | cons -0.0000 | clip 0.0000 | ETA: 14.76h (0.36 steps/s)
+
+step 00660/20000 (3.3%) | total 0.1211 | recon 0.0839 | uni 0.6309 | cons 0.2852 | clip 0.0000 | ETA: 14.32h (0.38 steps/s)
+
+step 00680/20000 (3.4%) | total 0.0976 | recon 0.0671 | uni 0.5636 | cons 0.1161 | clip 0.0000 | ETA: 13.90h (0.39 steps/s)
+
+step 00700/20000 (3.5%) | total 0.1467 | recon 0.1180 | uni 0.5725 | cons -0.0000 | clip 0.0000 | ETA: 13.51h (0.40 steps/s)
+
+step 00720/20000 (3.6%) | total 0.1554 | recon 0.1161 | uni 0.6092 | cons 0.4409 | clip 0.0000 | ETA: 13.14h (0.41 steps/s)
+
+step 00740/20000 (3.7%) | total 0.1365 | recon 0.1042 | uni 0.6467 | cons -0.0000 | clip 0.0000 | ETA: 12.79h (0.42 steps/s)
+
+step 00760/20000 (3.8%) | total 0.1582 | recon 0.1240 | uni 0.6651 | cons 0.0476 | clip 0.0000 | ETA: 12.46h (0.43 steps/s)
+
+step 00780/20000 (3.9%) | total 0.1671 | recon 0.1390 | uni 0.5624 | cons -0.0000 | clip 0.0000 | ETA: 12.15h (0.44 steps/s)
+
+step 00800/20000 (4.0%) | total 0.1606 | recon 0.1365 | uni 0.4818 | cons -0.0000 | clip 0.0000 | ETA: 11.85h (0.45 steps/s)
+
+step 00820/20000 (4.1%) | total 0.1230 | recon 0.1005 | uni 0.4495 | cons -0.0000 | clip 0.0000 | ETA: 11.57h (0.46 steps/s)
+
+step 00840/20000 (4.2%) | total 0.1324 | recon 0.1104 | uni 0.4408 | cons -0.0000 | clip 0.0000 | ETA: 11.29h (0.47 steps/s)
+
+step 00860/20000 (4.3%) | total 0.1234 | recon 0.1001 | uni 0.4660 | cons -0.0000 | clip 0.0000 | ETA: 11.04h (0.48 steps/s)
+
+step 00880/20000 (4.4%) | total 0.1141 | recon 0.0879 | uni 0.5257 | cons -0.0000 | clip 0.0000 | ETA: 10.79h (0.49 steps/s)
+
+step 00900/20000 (4.5%) | total 0.1716 | recon 0.1513 | uni 0.4051 | cons -0.0000 | clip 0.0000 | ETA: 10.56h (0.50 steps/s)
+
+step 00920/20000 (4.6%) | total 0.1126 | recon 0.0917 | uni 0.4191 | cons -0.0000 | clip 0.0000 | ETA: 10.33h (0.51 steps/s)
+
+step 00940/20000 (4.7%) | total 0.1568 | recon 0.1355 | uni 0.4273 | cons -0.0000 | clip 0.0000 | ETA: 10.12h (0.52 steps/s)
+
+step 00960/20000 (4.8%) | total 0.1090 | recon 0.0771 | uni 0.4780 | cons 0.4017 | clip 0.0000 | ETA: 9.91h (0.53 steps/s)
+
+step 00980/20000 (4.9%) | total 0.1993 | recon 0.1759 | uni 0.4688 | cons -0.0000 | clip 0.0000 | ETA: 9.71h (0.54 steps/s)
+
+step 01000/20000 (5.0%) | total 0.1458 | recon 0.1260 | uni 0.3970 | cons -0.0000 | clip 0.0000 | ETA: 9.52h (0.55 steps/s)
+
+step 01020/20000 (5.1%) | total 0.1313 | recon 0.1135 | uni 0.3565 | cons -0.0000 | clip 0.0000 | ETA: 9.37h (0.56 steps/s)
+
+step 01040/20000 (5.2%) | total 0.1722 | recon 0.1517 | uni 0.4101 | cons -0.0000 | clip 0.0000 | ETA: 9.20h (0.57 steps/s)
+
+step 01060/20000 (5.3%) | total 0.1031 | recon 0.0872 | uni 0.2981 | cons 0.0500 | clip 0.0000 | ETA: 9.03h (0.58 steps/s)
+
+step 01080/20000 (5.4%) | total 0.1287 | recon 0.1111 | uni 0.3082 | cons 0.1122 | clip 0.0000 | ETA: 8.86h (0.59 steps/s)
+
+step 01100/20000 (5.5%) | total 0.1550 | recon 0.1243 | uni 0.4861 | cons 0.3211 | clip 0.0000 | ETA: 8.71h (0.60 steps/s)
+
+step 01120/20000 (5.6%) | total 0.0988 | recon 0.0837 | uni 0.3026 | cons 0.0019 | clip 0.0000 | ETA: 8.55h (0.61 steps/s)
+
+step 01140/20000 (5.7%) | total 0.1158 | recon 0.0961 | uni 0.3053 | cons 0.2258 | clip 0.0000 | ETA: 8.41h (0.62 steps/s)
+
+step 01160/20000 (5.8%) | total 0.1486 | recon 0.1307 | uni 0.3296 | cons 0.0741 | clip 0.0000 | ETA: 8.27h (0.63 steps/s)
+
+step 01180/20000 (5.9%) | total 0.1416 | recon 0.1266 | uni 0.3002 | cons -0.0000 | clip 0.0000 | ETA: 8.13h (0.64 steps/s)
+
+step 01200/20000 (6.0%) | total 0.1009 | recon 0.0857 | uni 0.3055 | cons -0.0000 | clip 0.0000 | ETA: 8.00h (0.65 steps/s)
+
+step 01220/20000 (6.1%) | total 0.1421 | recon 0.1213 | uni 0.4166 | cons -0.0000 | clip 0.0000 | ETA: 7.87h (0.66 steps/s)
+
+step 01240/20000 (6.2%) | total 0.1241 | recon 0.1095 | uni 0.2920 | cons -0.0000 | clip 0.0000 | ETA: 7.75h (0.67 steps/s)
+
+step 01260/20000 (6.3%) | total 0.0864 | recon 0.0703 | uni 0.2838 | cons 0.0965 | clip 0.0000 | ETA: 7.63h (0.68 steps/s)
+
+step 01280/20000 (6.4%) | total 0.1571 | recon 0.1403 | uni 0.3017 | cons 0.0864 | clip 0.0000 | ETA: 7.51h (0.69 steps/s)
+
+step 01300/20000 (6.5%) | total 0.1118 | recon 0.0896 | uni 0.3508 | cons 0.2366 | clip 0.0000 | ETA: 7.40h (0.70 steps/s)
+
+step 01320/20000 (6.6%) | total 0.1722 | recon 0.1576 | uni 0.2908 | cons -0.0000 | clip 0.0000 | ETA: 7.29h (0.71 steps/s)
+
+step 01340/20000 (6.7%) | total 0.1425 | recon 0.1279 | uni 0.2930 | cons -0.0000 | clip 0.0000 | ETA: 7.18h (0.72 steps/s)
+
+step 01360/20000 (6.8%) | total 0.1070 | recon 0.0948 | uni 0.2427 | cons -0.0000 | clip 0.0000 | ETA: 7.08h (0.73 steps/s)
+
+step 01380/20000 (6.9%) | total 0.1676 | recon 0.1563 | uni 0.2255 | cons -0.0000 | clip 0.0000 | ETA: 6.98h (0.74 steps/s)
+
+step 01400/20000 (7.0%) | total 0.1254 | recon 0.1101 | uni 0.3067 | cons -0.0000 | clip 0.0000 | ETA: 6.88h (0.75 steps/s)
+
+step 01420/20000 (7.1%) | total 0.1130 | recon 0.0997 | uni 0.1827 | cons 0.2110 | clip 0.0000 | ETA: 6.79h (0.76 steps/s)
+
+step 01440/20000 (7.2%) | total 0.1089 | recon 0.1047 | uni 0.0613 | cons 0.0553 | clip 0.0000 | ETA: 6.69h (0.77 steps/s)
+
+step 01460/20000 (7.3%) | total 0.0824 | recon 0.0760 | uni 0.1288 | cons -0.0000 | clip 0.0000 | ETA: 6.60h (0.78 steps/s)
+
+step 01480/20000 (7.4%) | total 0.0825 | recon 0.0786 | uni 0.0674 | cons 0.0305 | clip 0.0000 | ETA: 6.52h (0.79 steps/s)
+
+step 01500/20000 (7.5%) | total 0.1002 | recon 0.0887 | uni 0.1530 | cons 0.1919 | clip 0.0000 | ETA: 6.43h (0.80 steps/s)
+
+step 01520/20000 (7.6%) | total 0.0806 | recon 0.0776 | uni 0.0595 | cons -0.0000 | clip 0.0000 | ETA: 6.35h (0.81 steps/s)
+
+step 01540/20000 (7.7%) | total 0.0789 | recon 0.0749 | uni 0.0558 | cons 0.0597 | clip 0.0000 | ETA: 6.27h (0.82 steps/s)
+
+step 01560/20000 (7.8%) | total 0.0978 | recon 0.0941 | uni 0.0739 | cons -0.0000 | clip 0.0000 | ETA: 6.19h (0.83 steps/s)
+
+step 01580/20000 (7.9%) | total 0.0809 | recon 0.0701 | uni 0.1695 | cons 0.1136 | clip 0.0000 | ETA: 6.12h (0.84 steps/s)
+
+step 01600/20000 (8.0%) | total 0.1109 | recon 0.1045 | uni 0.0922 | cons 0.0882 | clip 0.0000 | ETA: 6.04h (0.85 steps/s)
+
+step 01620/20000 (8.1%) | total 0.1726 | recon 0.1572 | uni 0.2191 | cons 0.2233 | clip 0.0000 | ETA: 5.97h (0.86 steps/s)
+
+step 01640/20000 (8.2%) | total 0.0834 | recon 0.0780 | uni 0.0781 | cons 0.0772 | clip 0.0000 | ETA: 5.90h (0.86 steps/s)
+
+step 01660/20000 (8.3%) | total 0.1315 | recon 0.1190 | uni 0.1725 | cons 0.1915 | clip 0.0000 | ETA: 5.83h (0.87 steps/s)
+
+step 01680/20000 (8.4%) | total 0.1723 | recon 0.1667 | uni 0.1121 | cons -0.0000 | clip 0.0000 | ETA: 5.76h (0.88 steps/s)
+
+step 01700/20000 (8.5%) | total 0.1128 | recon 0.1074 | uni 0.0706 | cons 0.0933 | clip 0.0000 | ETA: 5.69h (0.89 steps/s)
+
+step 01720/20000 (8.6%) | total 0.1411 | recon 0.1304 | uni 0.2126 | cons -0.0000 | clip 0.0000 | ETA: 5.63h (0.90 steps/s)
+
+step 01740/20000 (8.7%) | total 0.1810 | recon 0.1759 | uni 0.1016 | cons -0.0000 | clip 0.0000 | ETA: 5.57h (0.91 steps/s)
+
+step 01760/20000 (8.8%) | total 0.1056 | recon 0.1034 | uni 0.0371 | cons 0.0172 | clip 0.0000 | ETA: 5.50h (0.92 steps/s)
+
+step 01780/20000 (8.9%) | total 0.0966 | recon 0.0869 | uni 0.1326 | cons 0.1545 | clip 0.0000 | ETA: 5.44h (0.93 steps/s)
+
+step 01800/20000 (9.0%) | total 0.1562 | recon 0.1530 | uni 0.0644 | cons -0.0000 | clip 0.0000 | ETA: 5.39h (0.94 steps/s)
+
+step 01820/20000 (9.1%) | total 0.0526 | recon 0.0493 | uni 0.0496 | cons 0.0443 | clip 0.0000 | ETA: 5.33h (0.95 steps/s)
+
+step 01840/20000 (9.2%) | total 0.1085 | recon 0.1057 | uni 0.0573 | cons -0.0000 | clip 0.0000 | ETA: 5.27h (0.96 steps/s)
+
+step 01860/20000 (9.3%) | total 0.1326 | recon 0.1299 | uni 0.0540 | cons -0.0000 | clip 0.0000 | ETA: 5.22h (0.97 steps/s)
+
+step 01880/20000 (9.4%) | total 0.1096 | recon 0.1038 | uni 0.1155 | cons -0.0000 | clip 0.0000 | ETA: 5.16h (0.97 steps/s)
+
+step 01900/20000 (9.5%) | total 0.1236 | recon 0.1198 | uni 0.0767 | cons -0.0000 | clip 0.0000 | ETA: 5.11h (0.98 steps/s)
+
+step 01920/20000 (9.6%) | total 0.0600 | recon 0.0583 | uni 0.0348 | cons -0.0000 | clip 0.0000 | ETA: 5.06h (0.99 steps/s)
+
+step 01940/20000 (9.7%) | total 0.1447 | recon 0.1406 | uni 0.0515 | cons 0.0743 | clip 0.0000 | ETA: 5.01h (1.00 steps/s)
+
+step 01960/20000 (9.8%) | total 0.1095 | recon 0.1077 | uni 0.0354 | cons -0.0000 | clip 0.0000 | ETA: 4.96h (1.01 steps/s)
+
+step 01980/20000 (9.9%) | total 0.0518 | recon 0.0491 | uni 0.0534 | cons -0.0000 | clip 0.0000 | ETA: 4.91h (1.02 steps/s)
+
+step 02000/20000 (10.0%) | total 0.1540 | recon 0.1519 | uni 0.0424 | cons -0.0000 | clip 0.0000 | ETA: 4.86h (1.03 steps/s)
+
+step 02020/20000 (10.1%) | total 0.0621 | recon 0.0592 | uni 0.0437 | cons 0.0345 | clip 0.0000 | ETA: 4.83h (1.03 steps/s)
+
+step 02040/20000 (10.2%) | total 0.1013 | recon 0.0985 | uni 0.0507 | cons 0.0138 | clip 0.0000 | ETA: 4.78h (1.04 steps/s)
+
+step 02060/20000 (10.3%) | total 0.1387 | recon 0.1354 | uni 0.0461 | cons 0.0495 | clip 0.0000 | ETA: 4.74h (1.05 steps/s)
+
+step 02080/20000 (10.4%) | total 0.1028 | recon 0.1006 | uni 0.0329 | cons 0.0302 | clip 0.0000 | ETA: 4.69h (1.06 steps/s)
+
+step 02100/20000 (10.5%) | total 0.0899 | recon 0.0884 | uni 0.0311 | cons -0.0000 | clip 0.0000 | ETA: 4.65h (1.07 steps/s)
+
+step 02120/20000 (10.6%) | total 0.1388 | recon 0.1353 | uni 0.0392 | cons 0.0771 | clip 0.0000 | ETA: 4.61h (1.08 steps/s)
+
+step 02140/20000 (10.7%) | total 0.0760 | recon 0.0740 | uni 0.0406 | cons -0.0000 | clip 0.0000 | ETA: 4.56h (1.09 steps/s)
+
+step 02160/20000 (10.8%) | total 0.1200 | recon 0.1171 | uni 0.0577 | cons -0.0000 | clip 0.0000 | ETA: 4.52h (1.10 steps/s)
+
+step 02180/20000 (10.9%) | total 0.0625 | recon 0.0561 | uni 0.0696 | cons 0.1468 | clip 0.0000 | ETA: 4.48h (1.10 steps/s)
+
+step 02200/20000 (11.0%) | total 0.0470 | recon 0.0441 | uni 0.0583 | cons -0.0000 | clip 0.0000 | ETA: 4.44h (1.11 steps/s)
+
+step 02220/20000 (11.1%) | total 0.0878 | recon 0.0837 | uni 0.0823 | cons -0.0000 | clip 0.0000 | ETA: 4.40h (1.12 steps/s)
+
+step 02240/20000 (11.2%) | total 0.1357 | recon 0.1335 | uni 0.0440 | cons -0.0000 | clip 0.0000 | ETA: 4.37h (1.13 steps/s)
+
+step 02260/20000 (11.3%) | total 0.0756 | recon 0.0728 | uni 0.0575 | cons -0.0000 | clip 0.0000 | ETA: 4.33h (1.14 steps/s)
+
+step 02280/20000 (11.4%) | total 0.0985 | recon 0.0939 | uni 0.0327 | cons 0.1485 | clip 0.0000 | ETA: 4.29h (1.15 steps/s)
+
+step 02300/20000 (11.5%) | total 0.1243 | recon 0.1158 | uni 0.1147 | cons 0.1415 | clip 0.0000 | ETA: 4.26h (1.16 steps/s)
+
+step 02320/20000 (11.6%) | total 0.0974 | recon 0.0939 | uni 0.0693 | cons -0.0000 | clip 0.0000 | ETA: 4.22h (1.16 steps/s)
+
+step 02340/20000 (11.7%) | total 0.0696 | recon 0.0590 | uni 0.1416 | cons 0.1762 | clip 0.0000 | ETA: 4.18h (1.17 steps/s)
+
+step 02360/20000 (11.8%) | total 0.0982 | recon 0.0929 | uni 0.0494 | cons 0.1390 | clip 0.0000 | ETA: 4.15h (1.18 steps/s)
+
+step 02380/20000 (11.9%) | total 0.0858 | recon 0.0842 | uni 0.0312 | cons -0.0000 | clip 0.0000 | ETA: 4.11h (1.19 steps/s)
+
+step 02400/20000 (12.0%) | total 0.1014 | recon 0.0957 | uni 0.0545 | cons 0.1504 | clip 0.0000 | ETA: 4.08h (1.20 steps/s)
+
+step 02420/20000 (12.1%) | total 0.0965 | recon 0.0868 | uni 0.1232 | cons 0.1757 | clip 0.0000 | ETA: 4.05h (1.21 steps/s)
+
+step 02440/20000 (12.2%) | total 0.0699 | recon 0.0685 | uni 0.0269 | cons -0.0000 | clip 0.0000 | ETA: 4.02h (1.21 steps/s)
+
+step 02460/20000 (12.3%) | total 0.0751 | recon 0.0696 | uni 0.1107 | cons -0.0000 | clip 0.0000 | ETA: 3.98h (1.22 steps/s)
+
+step 02480/20000 (12.4%) | total 0.1083 | recon 0.1061 | uni 0.0406 | cons 0.0100 | clip 0.0000 | ETA: 3.95h (1.23 steps/s)
+
+step 02500/20000 (12.5%) | total 0.1353 | recon 0.1337 | uni 0.0324 | cons -0.0000 | clip 0.0000 | ETA: 3.92h (1.24 steps/s)
+
+step 02520/20000 (12.6%) | total 0.0429 | recon 0.0412 | uni 0.0349 | cons -0.0000 | clip 0.0000 | ETA: 3.89h (1.25 steps/s)
+
+step 02540/20000 (12.7%) | total 0.0627 | recon 0.0599 | uni 0.0575 | cons -0.0000 | clip 0.0000 | ETA: 3.86h (1.26 steps/s)
+
+step 02560/20000 (12.8%) | total 0.1005 | recon 0.0973 | uni 0.0643 | cons -0.0000 | clip 0.0000 | ETA: 3.83h (1.26 steps/s)
+
+step 02580/20000 (12.9%) | total 0.0664 | recon 0.0634 | uni 0.0373 | cons 0.0562 | clip 0.0000 | ETA: 3.80h (1.27 steps/s)
+
+step 02600/20000 (13.0%) | total 0.1110 | recon 0.1094 | uni 0.0260 | cons 0.0130 | clip 0.0000 | ETA: 3.78h (1.28 steps/s)
+
+step 02620/20000 (13.1%) | total 0.1325 | recon 0.1297 | uni 0.0371 | cons 0.0465 | clip 0.0000 | ETA: 3.75h (1.29 steps/s)
+
+step 02640/20000 (13.2%) | total 0.0703 | recon 0.0660 | uni 0.0276 | cons 0.1453 | clip 0.0000 | ETA: 3.72h (1.30 steps/s)
+
+step 02660/20000 (13.3%) | total 0.1196 | recon 0.1107 | uni 0.1058 | cons 0.1762 | clip 0.0000 | ETA: 3.69h (1.30 steps/s)
+
+step 02680/20000 (13.4%) | total 0.1062 | recon 0.1012 | uni 0.0993 | cons -0.0000 | clip 0.0000 | ETA: 3.67h (1.31 steps/s)
+
+step 02700/20000 (13.5%) | total 0.0416 | recon 0.0402 | uni 0.0273 | cons -0.0000 | clip 0.0000 | ETA: 3.64h (1.32 steps/s)
+
+step 02720/20000 (13.6%) | total 0.0765 | recon 0.0748 | uni 0.0348 | cons -0.0000 | clip 0.0000 | ETA: 3.61h (1.33 steps/s)
+
+step 02740/20000 (13.7%) | total 0.1346 | recon 0.1332 | uni 0.0283 | cons -0.0000 | clip 0.0000 | ETA: 3.59h (1.34 steps/s)
+
+step 02760/20000 (13.8%) | total 0.0584 | recon 0.0563 | uni 0.0276 | cons 0.0371 | clip 0.0000 | ETA: 3.56h (1.34 steps/s)
+
+step 02780/20000 (13.9%) | total 0.0760 | recon 0.0737 | uni 0.0458 | cons -0.0000 | clip 0.0000 | ETA: 3.54h (1.35 steps/s)
+
+step 02800/20000 (14.0%) | total 0.1268 | recon 0.1253 | uni 0.0299 | cons -0.0000 | clip 0.0000 | ETA: 3.51h (1.36 steps/s)
+
+step 02820/20000 (14.1%) | total 0.0545 | recon 0.0519 | uni 0.0515 | cons -0.0000 | clip 0.0000 | ETA: 3.49h (1.37 steps/s)
+
+step 02840/20000 (14.2%) | total 0.1046 | recon 0.1012 | uni 0.0683 | cons -0.0000 | clip 0.0000 | ETA: 3.46h (1.38 steps/s)
+
+step 02860/20000 (14.3%) | total 0.0900 | recon 0.0880 | uni 0.0267 | cons 0.0321 | clip 0.0000 | ETA: 3.44h (1.38 steps/s)
+
+step 02880/20000 (14.4%) | total 0.0807 | recon 0.0791 | uni 0.0316 | cons -0.0000 | clip 0.0000 | ETA: 3.42h (1.39 steps/s)
+
+step 02900/20000 (14.5%) | total 0.0734 | recon 0.0722 | uni 0.0226 | cons -0.0000 | clip 0.0000 | ETA: 3.39h (1.40 steps/s)
+
+step 02920/20000 (14.6%) | total 0.0872 | recon 0.0860 | uni 0.0242 | cons -0.0000 | clip 0.0000 | ETA: 3.37h (1.41 steps/s)
+
+step 02940/20000 (14.7%) | total 0.0599 | recon 0.0580 | uni 0.0374 | cons -0.0000 | clip 0.0000 | ETA: 3.35h (1.42 steps/s)
+
+step 02960/20000 (14.8%) | total 0.0530 | recon 0.0518 | uni 0.0247 | cons -0.0000 | clip 0.0000 | ETA: 3.33h (1.42 steps/s)
+
+step 02980/20000 (14.9%) | total 0.1018 | recon 0.1002 | uni 0.0163 | cons 0.0374 | clip 0.0000 | ETA: 3.30h (1.43 steps/s)
+
+step 03000/20000 (15.0%) | total 0.1446 | recon 0.1329 | uni 0.2334 | cons -0.0000 | clip 0.0000 | ETA: 3.28h (1.44 steps/s)
+
+step 03020/20000 (15.1%) | total 0.0664 | recon 0.0635 | uni 0.0585 | cons -0.0000 | clip 0.0000 | ETA: 3.27h (1.44 steps/s)
+
+step 03040/20000 (15.2%) | total 0.0526 | recon 0.0496 | uni 0.0600 | cons -0.0000 | clip 0.0000 | ETA: 3.25h (1.45 steps/s)
+
+step 03060/20000 (15.3%) | total 0.0795 | recon 0.0770 | uni 0.0504 | cons -0.0000 | clip 0.0000 | ETA: 3.23h (1.46 steps/s)
+
+step 03080/20000 (15.4%) | total 0.0885 | recon 0.0873 | uni 0.0241 | cons -0.0000 | clip 0.0000 | ETA: 3.21h (1.46 steps/s)
+
+step 03100/20000 (15.5%) | total 0.0532 | recon 0.0517 | uni 0.0300 | cons -0.0000 | clip 0.0000 | ETA: 3.19h (1.47 steps/s)
+
+step 03120/20000 (15.6%) | total 0.0950 | recon 0.0915 | uni 0.0330 | cons 0.0931 | clip 0.0000 | ETA: 3.17h (1.48 steps/s)
+
+step 03140/20000 (15.7%) | total 0.1118 | recon 0.1102 | uni 0.0302 | cons -0.0000 | clip 0.0000 | ETA: 3.15h (1.49 steps/s)
+
+step 03160/20000 (15.8%) | total 0.1085 | recon 0.1074 | uni 0.0212 | cons -0.0000 | clip 0.0000 | ETA: 3.13h (1.50 steps/s)
+
+step 03180/20000 (15.9%) | total 0.0726 | recon 0.0711 | uni 0.0289 | cons -0.0000 | clip 0.0000 | ETA: 3.11h (1.50 steps/s)
+
+step 03200/20000 (16.0%) | total 0.0872 | recon 0.0851 | uni 0.0320 | cons 0.0255 | clip 0.0000 | ETA: 3.09h (1.51 steps/s)
+
+step 03220/20000 (16.1%) | total 0.0917 | recon 0.0907 | uni 0.0209 | cons -0.0000 | clip 0.0000 | ETA: 3.07h (1.52 steps/s)
+
+step 03240/20000 (16.2%) | total 0.0885 | recon 0.0864 | uni 0.0202 | cons 0.0529 | clip 0.0000 | ETA: 3.05h (1.53 steps/s)
+
+step 03260/20000 (16.3%) | total 0.1167 | recon 0.1149 | uni 0.0363 | cons -0.0000 | clip 0.0000 | ETA: 3.03h (1.53 steps/s)
+
+step 03280/20000 (16.4%) | total 0.1154 | recon 0.1144 | uni 0.0211 | cons -0.0000 | clip 0.0000 | ETA: 3.01h (1.54 steps/s)
+
+step 03300/20000 (16.5%) | total 0.0699 | recon 0.0677 | uni 0.0248 | cons 0.0475 | clip 0.0000 | ETA: 3.00h (1.55 steps/s)
+
+step 03320/20000 (16.6%) | total 0.1574 | recon 0.1479 | uni 0.1639 | cons 0.0651 | clip 0.0000 | ETA: 2.98h (1.56 steps/s)
+
+step 03340/20000 (16.7%) | total 0.1400 | recon 0.1349 | uni 0.0563 | cons 0.1177 | clip 0.0000 | ETA: 2.96h (1.56 steps/s)
+
+step 03360/20000 (16.8%) | total 0.0960 | recon 0.0934 | uni 0.0225 | cons 0.0762 | clip 0.0000 | ETA: 2.94h (1.57 steps/s)
+
+step 03380/20000 (16.9%) | total 0.0496 | recon 0.0485 | uni 0.0211 | cons -0.0000 | clip 0.0000 | ETA: 2.93h (1.58 steps/s)
+
+step 03400/20000 (17.0%) | total 0.0308 | recon 0.0296 | uni 0.0244 | cons -0.0000 | clip 0.0000 | ETA: 2.91h (1.59 steps/s)
+
+step 03420/20000 (17.1%) | total 0.0727 | recon 0.0714 | uni 0.0272 | cons -0.0000 | clip 0.0000 | ETA: 2.89h (1.59 steps/s)
+
+step 03440/20000 (17.2%) | total 0.0721 | recon 0.0654 | uni 0.0707 | cons 0.1538 | clip 0.0000 | ETA: 2.88h (1.60 steps/s)
+
+step 03460/20000 (17.3%) | total 0.0518 | recon 0.0489 | uni 0.0371 | cons 0.0493 | clip 0.0000 | ETA: 2.86h (1.61 steps/s)
+
+step 03480/20000 (17.4%) | total 0.0745 | recon 0.0732 | uni 0.0257 | cons -0.0000 | clip 0.0000 | ETA: 2.84h (1.61 steps/s)
+
+step 03500/20000 (17.5%) | total 0.0762 | recon 0.0754 | uni 0.0161 | cons -0.0000 | clip 0.0000 | ETA: 2.83h (1.62 steps/s)
+
+step 03520/20000 (17.6%) | total 0.0771 | recon 0.0759 | uni 0.0242 | cons -0.0000 | clip 0.0000 | ETA: 2.81h (1.63 steps/s)
+
+step 03540/20000 (17.7%) | total 0.0755 | recon 0.0741 | uni 0.0167 | cons 0.0248 | clip 0.0000 | ETA: 2.80h (1.64 steps/s)
+
+step 03560/20000 (17.8%) | total 0.0793 | recon 0.0783 | uni 0.0203 | cons -0.0000 | clip 0.0000 | ETA: 2.78h (1.64 steps/s)
+
+step 03580/20000 (17.9%) | total 0.0441 | recon 0.0412 | uni 0.0579 | cons -0.0000 | clip 0.0000 | ETA: 2.76h (1.65 steps/s)
+
+step 03600/20000 (18.0%) | total 0.0902 | recon 0.0892 | uni 0.0203 | cons -0.0000 | clip 0.0000 | ETA: 2.75h (1.66 steps/s)
+
+step 03620/20000 (18.1%) | total 0.0556 | recon 0.0543 | uni 0.0261 | cons -0.0000 | clip 0.0000 | ETA: 2.73h (1.66 steps/s)
+
+step 03640/20000 (18.2%) | total 0.0803 | recon 0.0795 | uni 0.0151 | cons -0.0000 | clip 0.0000 | ETA: 2.72h (1.67 steps/s)
+
+step 03660/20000 (18.3%) | total 0.0707 | recon 0.0697 | uni 0.0198 | cons -0.0000 | clip 0.0000 | ETA: 2.70h (1.68 steps/s)
+
+step 03680/20000 (18.4%) | total 0.1899 | recon 0.1888 | uni 0.0221 | cons -0.0000 | clip 0.0000 | ETA: 2.69h (1.69 steps/s)
+
+step 03700/20000 (18.5%) | total 0.0675 | recon 0.0659 | uni 0.0206 | cons 0.0261 | clip 0.0000 | ETA: 2.67h (1.69 steps/s)
+
+step 03720/20000 (18.6%) | total 0.0532 | recon 0.0521 | uni 0.0190 | cons 0.0032 | clip 0.0000 | ETA: 2.66h (1.70 steps/s)
+
+step 03740/20000 (18.7%) | total 0.0964 | recon 0.0925 | uni 0.0257 | cons 0.1299 | clip 0.0000 | ETA: 2.65h (1.71 steps/s)
+
+step 03760/20000 (18.8%) | total 0.0759 | recon 0.0722 | uni 0.0266 | cons 0.1195 | clip 0.0000 | ETA: 2.63h (1.71 steps/s)
+
+step 03780/20000 (18.9%) | total 0.1395 | recon 0.1388 | uni 0.0125 | cons -0.0000 | clip 0.0000 | ETA: 2.62h (1.72 steps/s)
+
+step 03800/20000 (19.0%) | total 0.1198 | recon 0.1191 | uni 0.0145 | cons -0.0000 | clip 0.0000 | ETA: 2.60h (1.73 steps/s)
+
+step 03820/20000 (19.1%) | total 0.1240 | recon 0.1224 | uni 0.0303 | cons -0.0000 | clip 0.0000 | ETA: 2.59h (1.73 steps/s)
+
+step 03840/20000 (19.2%) | total 0.0653 | recon 0.0624 | uni 0.0253 | cons 0.0802 | clip 0.0000 | ETA: 2.58h (1.74 steps/s)
+
+step 03860/20000 (19.3%) | total 0.1100 | recon 0.1079 | uni 0.0212 | cons 0.0529 | clip 0.0000 | ETA: 2.56h (1.75 steps/s)
+
+step 03880/20000 (19.4%) | total 0.0798 | recon 0.0788 | uni 0.0192 | cons -0.0000 | clip 0.0000 | ETA: 2.55h (1.76 steps/s)
+
+step 03900/20000 (19.5%) | total 0.1152 | recon 0.1137 | uni 0.0149 | cons 0.0366 | clip 0.0000 | ETA: 2.54h (1.76 steps/s)
+
+step 03920/20000 (19.6%) | total 0.0918 | recon 0.0908 | uni 0.0217 | cons -0.0000 | clip 0.0000 | ETA: 2.52h (1.77 steps/s)
+
+step 03940/20000 (19.7%) | total 0.0629 | recon 0.0598 | uni 0.0227 | cons 0.0984 | clip 0.0000 | ETA: 2.51h (1.78 steps/s)
+
+step 03960/20000 (19.8%) | total 0.0662 | recon 0.0644 | uni 0.0378 | cons -0.0000 | clip 0.0000 | ETA: 2.50h (1.78 steps/s)
+
+step 03980/20000 (19.9%) | total 0.0572 | recon 0.0559 | uni 0.0270 | cons -0.0000 | clip 0.0000 | ETA: 2.49h (1.79 steps/s)
+
+step 04000/20000 (20.0%) | total 0.0845 | recon 0.0819 | uni 0.0188 | cons 0.0841 | clip 0.0000 | ETA: 2.47h (1.80 steps/s)
+
+step 04020/20000 (20.1%) | total 0.0590 | recon 0.0568 | uni 0.0247 | cons 0.0487 | clip 0.0000 | ETA: 2.47h (1.80 steps/s)
+
+step 04040/20000 (20.2%) | total 0.1030 | recon 0.1009 | uni 0.0419 | cons -0.0000 | clip 0.0000 | ETA: 2.46h (1.80 steps/s)
+
+step 04060/20000 (20.3%) | total 0.0512 | recon 0.0502 | uni 0.0212 | cons -0.0000 | clip 0.0000 | ETA: 2.44h (1.81 steps/s)
+
+step 04080/20000 (20.4%) | total 0.1261 | recon 0.1254 | uni 0.0147 | cons -0.0000 | clip 0.0000 | ETA: 2.43h (1.82 steps/s)
+
+step 04100/20000 (20.5%) | total 0.0692 | recon 0.0685 | uni 0.0132 | cons -0.0000 | clip 0.0000 | ETA: 2.42h (1.82 steps/s)
+
+step 04120/20000 (20.6%) | total 0.0788 | recon 0.0780 | uni 0.0175 | cons -0.0000 | clip 0.0000 | ETA: 2.41h (1.83 steps/s)
+
+step 04140/20000 (20.7%) | total 0.0766 | recon 0.0753 | uni 0.0130 | cons 0.0331 | clip 0.0000 | ETA: 2.40h (1.84 steps/s)
+
+step 04160/20000 (20.8%) | total 0.0607 | recon 0.0597 | uni 0.0200 | cons -0.0000 | clip 0.0000 | ETA: 2.39h (1.84 steps/s)
+
+step 04180/20000 (20.9%) | total 0.1166 | recon 0.1151 | uni 0.0177 | cons 0.0328 | clip 0.0000 | ETA: 2.37h (1.85 steps/s)
+
+step 04200/20000 (21.0%) | total 0.1227 | recon 0.1211 | uni 0.0314 | cons -0.0000 | clip 0.0000 | ETA: 2.36h (1.86 steps/s)
+
+step 04220/20000 (21.1%) | total 0.0517 | recon 0.0507 | uni 0.0187 | cons -0.0000 | clip 0.0000 | ETA: 2.35h (1.86 steps/s)
+
+step 04240/20000 (21.2%) | total 0.0754 | recon 0.0744 | uni 0.0195 | cons -0.0000 | clip 0.0000 | ETA: 2.34h (1.87 steps/s)
+
+step 04260/20000 (21.3%) | total 0.0671 | recon 0.0650 | uni 0.0201 | cons 0.0504 | clip 0.0000 | ETA: 2.33h (1.88 steps/s)
+
+step 04280/20000 (21.4%) | total 0.0752 | recon 0.0734 | uni 0.0195 | cons 0.0413 | clip 0.0000 | ETA: 2.32h (1.88 steps/s)
+
+step 04300/20000 (21.5%) | total 0.1550 | recon 0.1526 | uni 0.0149 | cons 0.0855 | clip 0.0000 | ETA: 2.31h (1.89 steps/s)
+
+step 04320/20000 (21.6%) | total 0.0539 | recon 0.0525 | uni 0.0276 | cons -0.0000 | clip 0.0000 | ETA: 2.30h (1.90 steps/s)
+
+step 04340/20000 (21.7%) | total 0.1062 | recon 0.1051 | uni 0.0230 | cons -0.0000 | clip 0.0000 | ETA: 2.28h (1.90 steps/s)
+
+step 04360/20000 (21.8%) | total 0.0712 | recon 0.0695 | uni 0.0122 | cons 0.0525 | clip 0.0000 | ETA: 2.27h (1.91 steps/s)
+
+step 04380/20000 (21.9%) | total 0.1099 | recon 0.1085 | uni 0.0169 | cons 0.0292 | clip 0.0000 | ETA: 2.26h (1.92 steps/s)
+
+step 04400/20000 (22.0%) | total 0.1572 | recon 0.1559 | uni 0.0118 | cons 0.0365 | clip 0.0000 | ETA: 2.25h (1.92 steps/s)
+
+step 04420/20000 (22.1%) | total 0.1198 | recon 0.1167 | uni 0.0270 | cons 0.0869 | clip 0.0000 | ETA: 2.24h (1.93 steps/s)
+
+step 04440/20000 (22.2%) | total 0.1018 | recon 0.1010 | uni 0.0170 | cons -0.0000 | clip 0.0000 | ETA: 2.23h (1.94 steps/s)
+
+step 04460/20000 (22.3%) | total 0.1252 | recon 0.1244 | uni 0.0155 | cons -0.0000 | clip 0.0000 | ETA: 2.22h (1.94 steps/s)
+
+step 04480/20000 (22.4%) | total 0.1671 | recon 0.1649 | uni 0.0227 | cons 0.0514 | clip 0.0000 | ETA: 2.21h (1.95 steps/s)
+
+step 04500/20000 (22.5%) | total 0.1592 | recon 0.1560 | uni 0.0347 | cons 0.0749 | clip 0.0000 | ETA: 2.20h (1.96 steps/s)
+
+step 04520/20000 (22.6%) | total 0.0603 | recon 0.0554 | uni 0.0520 | cons 0.1149 | clip 0.0000 | ETA: 2.19h (1.96 steps/s)
+
+step 04540/20000 (22.7%) | total 0.0799 | recon 0.0788 | uni 0.0228 | cons -0.0000 | clip 0.0000 | ETA: 2.18h (1.97 steps/s)
+
+step 04560/20000 (22.8%) | total 0.0653 | recon 0.0641 | uni 0.0228 | cons -0.0000 | clip 0.0000 | ETA: 2.17h (1.97 steps/s)
+
+step 04580/20000 (22.9%) | total 0.1081 | recon 0.1070 | uni 0.0220 | cons -0.0000 | clip 0.0000 | ETA: 2.16h (1.98 steps/s)
+
+step 04600/20000 (23.0%) | total 0.1014 | recon 0.1004 | uni 0.0204 | cons -0.0000 | clip 0.0000 | ETA: 2.15h (1.99 steps/s)
+
+step 04620/20000 (23.1%) | total 0.0932 | recon 0.0889 | uni 0.0241 | cons 0.1546 | clip 0.0000 | ETA: 2.14h (1.99 steps/s)
+
+step 04640/20000 (23.2%) | total 0.0589 | recon 0.0569 | uni 0.0161 | cons 0.0565 | clip 0.0000 | ETA: 2.13h (2.00 steps/s)
+
+step 04660/20000 (23.3%) | total 0.0701 | recon 0.0678 | uni 0.0185 | cons 0.0716 | clip 0.0000 | ETA: 2.12h (2.01 steps/s)
+
+step 04680/20000 (23.4%) | total 0.1068 | recon 0.1059 | uni 0.0185 | cons -0.0000 | clip 0.0000 | ETA: 2.11h (2.01 steps/s)
+
+step 04700/20000 (23.5%) | total 0.1269 | recon 0.1244 | uni 0.0179 | cons 0.0760 | clip 0.0000 | ETA: 2.11h (2.02 steps/s)
+
+step 04720/20000 (23.6%) | total 0.0671 | recon 0.0660 | uni 0.0181 | cons 0.0081 | clip 0.0000 | ETA: 2.10h (2.03 steps/s)
+
+step 04740/20000 (23.7%) | total 0.1143 | recon 0.1131 | uni 0.0230 | cons -0.0000 | clip 0.0000 | ETA: 2.09h (2.03 steps/s)
+
+step 04760/20000 (23.8%) | total 0.1089 | recon 0.1065 | uni 0.0197 | cons 0.0707 | clip 0.0000 | ETA: 2.08h (2.04 steps/s)
+
+step 04780/20000 (23.9%) | total 0.1142 | recon 0.1132 | uni 0.0195 | cons -0.0000 | clip 0.0000 | ETA: 2.07h (2.04 steps/s)
+
+step 04800/20000 (24.0%) | total 0.0597 | recon 0.0583 | uni 0.0286 | cons -0.0000 | clip 0.0000 | ETA: 2.06h (2.05 steps/s)
+
+step 04820/20000 (24.1%) | total 0.0836 | recon 0.0829 | uni 0.0149 | cons -0.0000 | clip 0.0000 | ETA: 2.05h (2.06 steps/s)
+
+step 04840/20000 (24.2%) | total 0.0815 | recon 0.0806 | uni 0.0160 | cons 0.0073 | clip 0.0000 | ETA: 2.04h (2.06 steps/s)
+
+step 04860/20000 (24.3%) | total 0.0672 | recon 0.0661 | uni 0.0177 | cons 0.0147 | clip 0.0000 | ETA: 2.03h (2.07 steps/s)
+
+step 04880/20000 (24.4%) | total 0.0990 | recon 0.0984 | uni 0.0133 | cons -0.0000 | clip 0.0000 | ETA: 2.02h (2.07 steps/s)
+
+step 04900/20000 (24.5%) | total 0.0816 | recon 0.0765 | uni 0.0318 | cons 0.1740 | clip 0.0000 | ETA: 2.02h (2.08 steps/s)
+
+step 04920/20000 (24.6%) | total 0.0394 | recon 0.0385 | uni 0.0195 | cons -0.0000 | clip 0.0000 | ETA: 2.01h (2.09 steps/s)
+
+step 04940/20000 (24.7%) | total 0.1095 | recon 0.1084 | uni 0.0224 | cons -0.0000 | clip 0.0000 | ETA: 2.00h (2.09 steps/s)
+
+step 04960/20000 (24.8%) | total 0.1096 | recon 0.1085 | uni 0.0134 | cons 0.0209 | clip 0.0000 | ETA: 1.99h (2.10 steps/s)
+
+step 04980/20000 (24.9%) | total 0.1697 | recon 0.1678 | uni 0.0181 | cons 0.0527 | clip 0.0000 | ETA: 1.98h (2.11 steps/s)
+
+step 05000/20000 (25.0%) | total 0.1110 | recon 0.1102 | uni 0.0164 | cons -0.0000 | clip 0.0000 | ETA: 1.97h (2.11 steps/s)
+
+step 05020/20000 (25.1%) | total 0.0604 | recon 0.0595 | uni 0.0175 | cons -0.0000 | clip 0.0000 | ETA: 1.97h (2.11 steps/s)
+
+step 05040/20000 (25.2%) | total 0.0547 | recon 0.0529 | uni 0.0342 | cons -0.0000 | clip 0.0000 | ETA: 1.96h (2.12 steps/s)
+
+step 05060/20000 (25.3%) | total 0.0645 | recon 0.0618 | uni 0.0263 | cons 0.0684 | clip 0.0000 | ETA: 1.96h (2.12 steps/s)
+
+step 05080/20000 (25.4%) | total 0.0994 | recon 0.0981 | uni 0.0181 | cons 0.0221 | clip 0.0000 | ETA: 1.95h (2.13 steps/s)
+
+step 05100/20000 (25.5%) | total 0.0493 | recon 0.0476 | uni 0.0129 | cons 0.0557 | clip 0.0000 | ETA: 1.94h (2.13 steps/s)
+
+step 05120/20000 (25.6%) | total 0.0457 | recon 0.0437 | uni 0.0159 | cons 0.0600 | clip 0.0000 | ETA: 1.93h (2.14 steps/s)
+
+step 05140/20000 (25.7%) | total 0.0754 | recon 0.0720 | uni 0.0230 | cons 0.1120 | clip 0.0000 | ETA: 1.92h (2.15 steps/s)
+
+step 05160/20000 (25.8%) | total 0.1179 | recon 0.1157 | uni 0.0308 | cons 0.0344 | clip 0.0000 | ETA: 1.92h (2.15 steps/s)
+
+step 05180/20000 (25.9%) | total 0.0903 | recon 0.0896 | uni 0.0155 | cons -0.0000 | clip 0.0000 | ETA: 1.91h (2.16 steps/s)
+
+step 05200/20000 (26.0%) | total 0.0632 | recon 0.0605 | uni 0.0218 | cons 0.0831 | clip 0.0000 | ETA: 1.90h (2.16 steps/s)
+
+step 05220/20000 (26.1%) | total 0.1041 | recon 0.1017 | uni 0.0231 | cons 0.0643 | clip 0.0000 | ETA: 1.89h (2.17 steps/s)
+
+step 05240/20000 (26.2%) | total 0.0721 | recon 0.0712 | uni 0.0175 | cons -0.0000 | clip 0.0000 | ETA: 1.88h (2.18 steps/s)
+
+step 05260/20000 (26.3%) | total 0.0747 | recon 0.0714 | uni 0.0206 | cons 0.1128 | clip 0.0000 | ETA: 1.88h (2.18 steps/s)
+
+step 05280/20000 (26.4%) | total 0.0527 | recon 0.0510 | uni 0.0190 | cons 0.0388 | clip 0.0000 | ETA: 1.87h (2.19 steps/s)
+
+step 05300/20000 (26.5%) | total 0.0477 | recon 0.0451 | uni 0.0533 | cons -0.0000 | clip 0.0000 | ETA: 1.86h (2.19 steps/s)
+
+step 05320/20000 (26.6%) | total 0.0468 | recon 0.0454 | uni 0.0284 | cons -0.0000 | clip 0.0000 | ETA: 1.85h (2.20 steps/s)
+
+step 05340/20000 (26.7%) | total 0.0517 | recon 0.0491 | uni 0.0270 | cons 0.0648 | clip 0.0000 | ETA: 1.85h (2.20 steps/s)
+
+step 05360/20000 (26.8%) | total 0.1549 | recon 0.1544 | uni 0.0103 | cons -0.0000 | clip 0.0000 | ETA: 1.84h (2.21 steps/s)
+
+step 05380/20000 (26.9%) | total 0.0375 | recon 0.0365 | uni 0.0194 | cons -0.0000 | clip 0.0000 | ETA: 1.83h (2.22 steps/s)
+
+step 05400/20000 (27.0%) | total 0.0702 | recon 0.0655 | uni 0.0232 | cons 0.1750 | clip 0.0000 | ETA: 1.83h (2.22 steps/s)
+
+step 05420/20000 (27.1%) | total 0.0757 | recon 0.0748 | uni 0.0192 | cons -0.0000 | clip 0.0000 | ETA: 1.82h (2.23 steps/s)
+
+step 05440/20000 (27.2%) | total 0.0703 | recon 0.0681 | uni 0.0121 | cons 0.0778 | clip 0.0000 | ETA: 1.81h (2.23 steps/s)
+
+step 05460/20000 (27.3%) | total 0.1107 | recon 0.1099 | uni 0.0161 | cons -0.0000 | clip 0.0000 | ETA: 1.80h (2.24 steps/s)
+
+step 05480/20000 (27.4%) | total 0.0512 | recon 0.0500 | uni 0.0240 | cons -0.0000 | clip 0.0000 | ETA: 1.80h (2.24 steps/s)
+
+step 05500/20000 (27.5%) | total 0.0398 | recon 0.0387 | uni 0.0233 | cons -0.0000 | clip 0.0000 | ETA: 1.79h (2.25 steps/s)
+
+step 05520/20000 (27.6%) | total 0.0810 | recon 0.0804 | uni 0.0117 | cons -0.0000 | clip 0.0000 | ETA: 1.78h (2.26 steps/s)
+
+step 05540/20000 (27.7%) | total 0.0951 | recon 0.0929 | uni 0.0192 | cons 0.0600 | clip 0.0000 | ETA: 1.78h (2.26 steps/s)
+
+step 05560/20000 (27.8%) | total 0.1051 | recon 0.1045 | uni 0.0133 | cons -0.0000 | clip 0.0000 | ETA: 1.77h (2.27 steps/s)
+
+step 05580/20000 (27.9%) | total 0.0414 | recon 0.0403 | uni 0.0206 | cons -0.0000 | clip 0.0000 | ETA: 1.76h (2.27 steps/s)
+
+step 05600/20000 (28.0%) | total 0.0989 | recon 0.0978 | uni 0.0213 | cons -0.0000 | clip 0.0000 | ETA: 1.76h (2.28 steps/s)
+
+step 05620/20000 (28.1%) | total 0.0470 | recon 0.0462 | uni 0.0165 | cons -0.0000 | clip 0.0000 | ETA: 1.75h (2.28 steps/s)
+
+step 05640/20000 (28.2%) | total 0.0345 | recon 0.0331 | uni 0.0189 | cons 0.0257 | clip 0.0000 | ETA: 1.74h (2.29 steps/s)
+
+step 05660/20000 (28.3%) | total 0.0345 | recon 0.0335 | uni 0.0207 | cons -0.0000 | clip 0.0000 | ETA: 1.74h (2.29 steps/s)
+
+step 05680/20000 (28.4%) | total 0.0726 | recon 0.0698 | uni 0.0246 | cons 0.0786 | clip 0.0000 | ETA: 1.73h (2.30 steps/s)
+
+step 05700/20000 (28.5%) | total 0.0958 | recon 0.0949 | uni 0.0188 | cons -0.0000 | clip 0.0000 | ETA: 1.72h (2.31 steps/s)
+
+step 05720/20000 (28.6%) | total 0.0868 | recon 0.0859 | uni 0.0167 | cons -0.0000 | clip 0.0000 | ETA: 1.72h (2.31 steps/s)
+
+step 05740/20000 (28.7%) | total 0.0967 | recon 0.0942 | uni 0.0217 | cons 0.0735 | clip 0.0000 | ETA: 1.71h (2.32 steps/s)
+
+step 05760/20000 (28.8%) | total 0.0535 | recon 0.0515 | uni 0.0401 | cons -0.0000 | clip 0.0000 | ETA: 1.70h (2.32 steps/s)
+
+step 05780/20000 (28.9%) | total 0.0634 | recon 0.0628 | uni 0.0120 | cons -0.0000 | clip 0.0000 | ETA: 1.70h (2.33 steps/s)
+
+step 05800/20000 (29.0%) | total 0.0630 | recon 0.0618 | uni 0.0097 | cons 0.0361 | clip 0.0000 | ETA: 1.69h (2.33 steps/s)
+
+step 05820/20000 (29.1%) | total 0.0573 | recon 0.0548 | uni 0.0114 | cons 0.0974 | clip 0.0000 | ETA: 1.68h (2.34 steps/s)
+
+step 05840/20000 (29.2%) | total 0.0490 | recon 0.0460 | uni 0.0295 | cons 0.0778 | clip 0.0000 | ETA: 1.68h (2.34 steps/s)
+
+step 05860/20000 (29.3%) | total 0.0706 | recon 0.0688 | uni 0.0153 | cons 0.0529 | clip 0.0000 | ETA: 1.67h (2.35 steps/s)
+
+step 05880/20000 (29.4%) | total 0.1007 | recon 0.0983 | uni 0.0213 | cons 0.0690 | clip 0.0000 | ETA: 1.67h (2.36 steps/s)
+
+step 05900/20000 (29.5%) | total 0.0671 | recon 0.0649 | uni 0.0238 | cons 0.0490 | clip 0.0000 | ETA: 1.66h (2.36 steps/s)
+
+step 05920/20000 (29.6%) | total 0.1014 | recon 0.0995 | uni 0.0152 | cons 0.0595 | clip 0.0000 | ETA: 1.65h (2.37 steps/s)
+
+step 05940/20000 (29.7%) | total 0.0513 | recon 0.0478 | uni 0.0235 | cons 0.1161 | clip 0.0000 | ETA: 1.65h (2.37 steps/s)
+
+step 05960/20000 (29.8%) | total 0.0493 | recon 0.0458 | uni 0.0307 | cons 0.0982 | clip 0.0000 | ETA: 1.64h (2.38 steps/s)
+
+step 05980/20000 (29.9%) | total 0.0684 | recon 0.0675 | uni 0.0177 | cons -0.0000 | clip 0.0000 | ETA: 1.63h (2.38 steps/s)
+
+step 06000/20000 (30.0%) | total 0.1174 | recon 0.1164 | uni 0.0204 | cons -0.0000 | clip 0.0000 | ETA: 1.63h (2.39 steps/s)
+
+step 06020/20000 (30.1%) | total 0.0482 | recon 0.0470 | uni 0.0231 | cons -0.0000 | clip 0.0000 | ETA: 1.63h (2.39 steps/s)
+
+step 06040/20000 (30.2%) | total 0.0994 | recon 0.0977 | uni 0.0341 | cons -0.0000 | clip 0.0000 | ETA: 1.62h (2.39 steps/s)
+
+step 06060/20000 (30.3%) | total 0.0319 | recon 0.0305 | uni 0.0288 | cons -0.0000 | clip 0.0000 | ETA: 1.61h (2.40 steps/s)
+
+step 06080/20000 (30.4%) | total 0.0464 | recon 0.0456 | uni 0.0175 | cons -0.0000 | clip 0.0000 | ETA: 1.61h (2.40 steps/s)
+
+step 06100/20000 (30.5%) | total 0.0440 | recon 0.0420 | uni 0.0178 | cons 0.0560 | clip 0.0000 | ETA: 1.60h (2.41 steps/s)
+
+step 06120/20000 (30.6%) | total 0.0594 | recon 0.0574 | uni 0.0254 | cons 0.0362 | clip 0.0000 | ETA: 1.60h (2.41 steps/s)
+
+step 06140/20000 (30.7%) | total 0.0853 | recon 0.0843 | uni 0.0197 | cons -0.0000 | clip 0.0000 | ETA: 1.59h (2.42 steps/s)
+
+step 06160/20000 (30.8%) | total 0.0621 | recon 0.0606 | uni 0.0207 | cons 0.0189 | clip 0.0000 | ETA: 1.59h (2.42 steps/s)
+
+step 06180/20000 (30.9%) | total 0.0534 | recon 0.0525 | uni 0.0195 | cons -0.0000 | clip 0.0000 | ETA: 1.58h (2.43 steps/s)
+
+step 06200/20000 (31.0%) | total 0.0770 | recon 0.0749 | uni 0.0413 | cons -0.0000 | clip 0.0000 | ETA: 1.57h (2.43 steps/s)
+
+step 06220/20000 (31.1%) | total 0.0788 | recon 0.0776 | uni 0.0192 | cons 0.0134 | clip 0.0000 | ETA: 1.57h (2.44 steps/s)
+
+step 06240/20000 (31.2%) | total 0.0766 | recon 0.0754 | uni 0.0136 | cons 0.0246 | clip 0.0000 | ETA: 1.56h (2.45 steps/s)
+
+step 06260/20000 (31.3%) | total 0.0635 | recon 0.0611 | uni 0.0236 | cons 0.0587 | clip 0.0000 | ETA: 1.56h (2.45 steps/s)
+
+step 06280/20000 (31.4%) | total 0.0361 | recon 0.0352 | uni 0.0183 | cons -0.0000 | clip 0.0000 | ETA: 1.55h (2.46 steps/s)
+
+step 06300/20000 (31.5%) | total 0.0292 | recon 0.0285 | uni 0.0148 | cons -0.0000 | clip 0.0000 | ETA: 1.55h (2.46 steps/s)
+
+step 06320/20000 (31.6%) | total 0.1183 | recon 0.1158 | uni 0.0228 | cons 0.0658 | clip 0.0000 | ETA: 1.54h (2.47 steps/s)
+
+step 06340/20000 (31.7%) | total 0.0845 | recon 0.0835 | uni 0.0200 | cons -0.0000 | clip 0.0000 | ETA: 1.54h (2.47 steps/s)
+
+step 06360/20000 (31.8%) | total 0.0906 | recon 0.0895 | uni 0.0222 | cons -0.0000 | clip 0.0000 | ETA: 1.53h (2.48 steps/s)
+
+step 06380/20000 (31.9%) | total 0.1221 | recon 0.1210 | uni 0.0204 | cons -0.0000 | clip 0.0000 | ETA: 1.52h (2.48 steps/s)
+
+step 06400/20000 (32.0%) | total 0.0492 | recon 0.0475 | uni 0.0128 | cons 0.0501 | clip 0.0000 | ETA: 1.52h (2.49 steps/s)
+
+step 06420/20000 (32.1%) | total 0.0396 | recon 0.0377 | uni 0.0327 | cons 0.0171 | clip 0.0000 | ETA: 1.51h (2.49 steps/s)
+
+step 06440/20000 (32.2%) | total 0.1015 | recon 0.0959 | uni 0.1116 | cons -0.0000 | clip 0.0000 | ETA: 1.51h (2.50 steps/s)
+
+step 06460/20000 (32.3%) | total 0.0942 | recon 0.0932 | uni 0.0202 | cons -0.0000 | clip 0.0000 | ETA: 1.50h (2.50 steps/s)
+
+step 06480/20000 (32.4%) | total 0.1281 | recon 0.1264 | uni 0.0133 | cons 0.0488 | clip 0.0000 | ETA: 1.50h (2.51 steps/s)
+
+step 06500/20000 (32.5%) | total 0.0938 | recon 0.0922 | uni 0.0331 | cons -0.0000 | clip 0.0000 | ETA: 1.49h (2.51 steps/s)
+
+step 06520/20000 (32.6%) | total 0.0799 | recon 0.0778 | uni 0.0424 | cons -0.0000 | clip 0.0000 | ETA: 1.49h (2.52 steps/s)
+
+step 06540/20000 (32.7%) | total 0.0885 | recon 0.0874 | uni 0.0223 | cons -0.0000 | clip 0.0000 | ETA: 1.48h (2.52 steps/s)
+
+step 06560/20000 (32.8%) | total 0.1156 | recon 0.1148 | uni 0.0156 | cons -0.0000 | clip 0.0000 | ETA: 1.48h (2.53 steps/s)
+
+step 06580/20000 (32.9%) | total 0.0718 | recon 0.0680 | uni 0.0393 | cons 0.0900 | clip 0.0000 | ETA: 1.47h (2.53 steps/s)
+
+step 06600/20000 (33.0%) | total 0.0412 | recon 0.0401 | uni 0.0215 | cons -0.0000 | clip 0.0000 | ETA: 1.47h (2.54 steps/s)
+
+step 06620/20000 (33.1%) | total 0.0761 | recon 0.0728 | uni 0.0257 | cons 0.1041 | clip 0.0000 | ETA: 1.46h (2.54 steps/s)
+
+step 06640/20000 (33.2%) | total 0.0773 | recon 0.0648 | uni 0.1591 | cons 0.2297 | clip 0.0000 | ETA: 1.46h (2.55 steps/s)
+
+step 06660/20000 (33.3%) | total 0.0577 | recon 0.0571 | uni 0.0131 | cons -0.0000 | clip 0.0000 | ETA: 1.45h (2.55 steps/s)
+
+step 06680/20000 (33.4%) | total 0.0796 | recon 0.0784 | uni 0.0110 | cons 0.0307 | clip 0.0000 | ETA: 1.45h (2.56 steps/s)
+
+step 06700/20000 (33.5%) | total 0.0349 | recon 0.0342 | uni 0.0154 | cons -0.0000 | clip 0.0000 | ETA: 1.44h (2.56 steps/s)
+
+step 06720/20000 (33.6%) | total 0.0876 | recon 0.0868 | uni 0.0154 | cons -0.0000 | clip 0.0000 | ETA: 1.44h (2.57 steps/s)
+
+step 06740/20000 (33.7%) | total 0.0967 | recon 0.0955 | uni 0.0117 | cons 0.0307 | clip 0.0000 | ETA: 1.43h (2.57 steps/s)
+
+step 06760/20000 (33.8%) | total 0.0800 | recon 0.0778 | uni 0.0136 | cons 0.0741 | clip 0.0000 | ETA: 1.43h (2.58 steps/s)
+
+step 06780/20000 (33.9%) | total 0.0817 | recon 0.0808 | uni 0.0161 | cons -0.0000 | clip 0.0000 | ETA: 1.42h (2.58 steps/s)
+
+step 06800/20000 (34.0%) | total 0.0449 | recon 0.0427 | uni 0.0152 | cons 0.0695 | clip 0.0000 | ETA: 1.42h (2.59 steps/s)
+
+step 06820/20000 (34.1%) | total 0.0442 | recon 0.0435 | uni 0.0141 | cons -0.0000 | clip 0.0000 | ETA: 1.41h (2.59 steps/s)
+
+step 06840/20000 (34.2%) | total 0.0338 | recon 0.0330 | uni 0.0164 | cons -0.0000 | clip 0.0000 | ETA: 1.41h (2.60 steps/s)
+
+step 06860/20000 (34.3%) | total 0.0787 | recon 0.0782 | uni 0.0111 | cons -0.0000 | clip 0.0000 | ETA: 1.40h (2.60 steps/s)
+
+step 06880/20000 (34.4%) | total 0.0681 | recon 0.0632 | uni 0.0439 | cons 0.1313 | clip 0.0000 | ETA: 1.40h (2.61 steps/s)
+
+step 06900/20000 (34.5%) | total 0.0359 | recon 0.0347 | uni 0.0240 | cons -0.0000 | clip 0.0000 | ETA: 1.39h (2.61 steps/s)
+
+step 06920/20000 (34.6%) | total 0.1050 | recon 0.1024 | uni 0.0226 | cons 0.0732 | clip 0.0000 | ETA: 1.39h (2.62 steps/s)
+
+step 06940/20000 (34.7%) | total 0.1043 | recon 0.1038 | uni 0.0104 | cons -0.0000 | clip 0.0000 | ETA: 1.38h (2.62 steps/s)
+
+step 06960/20000 (34.8%) | total 0.0442 | recon 0.0435 | uni 0.0137 | cons -0.0000 | clip 0.0000 | ETA: 1.38h (2.63 steps/s)
+
+step 06980/20000 (34.9%) | total 0.0524 | recon 0.0513 | uni 0.0221 | cons -0.0000 | clip 0.0000 | ETA: 1.37h (2.63 steps/s)
+
+step 07000/20000 (35.0%) | total 0.0390 | recon 0.0373 | uni 0.0349 | cons -0.0000 | clip 0.0000 | ETA: 1.37h (2.64 steps/s)
+
+step 07020/20000 (35.1%) | total 0.0447 | recon 0.0435 | uni 0.0250 | cons -0.0000 | clip 0.0000 | ETA: 1.37h (2.63 steps/s)
+
+step 07040/20000 (35.2%) | total 0.0841 | recon 0.0830 | uni 0.0226 | cons -0.0000 | clip 0.0000 | ETA: 1.36h (2.64 steps/s)
+
+step 07060/20000 (35.3%) | total 0.1003 | recon 0.0967 | uni 0.0290 | cons 0.1052 | clip 0.0000 | ETA: 1.36h (2.64 steps/s)
+
+step 07080/20000 (35.4%) | total 0.1026 | recon 0.1015 | uni 0.0087 | cons 0.0306 | clip 0.0000 | ETA: 1.35h (2.65 steps/s)
+
+step 07100/20000 (35.5%) | total 0.0646 | recon 0.0630 | uni 0.0158 | cons 0.0402 | clip 0.0000 | ETA: 1.35h (2.65 steps/s)
+
+step 07120/20000 (35.6%) | total 0.0478 | recon 0.0470 | uni 0.0145 | cons -0.0000 | clip 0.0000 | ETA: 1.35h (2.66 steps/s)
+
+step 07140/20000 (35.7%) | total 0.0432 | recon 0.0424 | uni 0.0162 | cons -0.0000 | clip 0.0000 | ETA: 1.34h (2.66 steps/s)
+
+step 07160/20000 (35.8%) | total 0.0966 | recon 0.0961 | uni 0.0110 | cons -0.0000 | clip 0.0000 | ETA: 1.34h (2.67 steps/s)
+
+step 07180/20000 (35.9%) | total 0.0525 | recon 0.0512 | uni 0.0108 | cons 0.0356 | clip 0.0000 | ETA: 1.33h (2.67 steps/s)
+
+step 07200/20000 (36.0%) | total 0.1117 | recon 0.1103 | uni 0.0156 | cons 0.0338 | clip 0.0000 | ETA: 1.33h (2.68 steps/s)
+
+step 07220/20000 (36.1%) | total 0.1253 | recon 0.1233 | uni 0.0188 | cons 0.0508 | clip 0.0000 | ETA: 1.32h (2.68 steps/s)
+
+step 07240/20000 (36.2%) | total 0.0590 | recon 0.0582 | uni 0.0152 | cons -0.0000 | clip 0.0000 | ETA: 1.32h (2.69 steps/s)
+
+step 07260/20000 (36.3%) | total 0.0341 | recon 0.0328 | uni 0.0246 | cons -0.0000 | clip 0.0000 | ETA: 1.32h (2.69 steps/s)
+
+step 07280/20000 (36.4%) | total 0.0513 | recon 0.0507 | uni 0.0130 | cons -0.0000 | clip 0.0000 | ETA: 1.31h (2.70 steps/s)
+
+step 07300/20000 (36.5%) | total 0.1206 | recon 0.1200 | uni 0.0133 | cons -0.0000 | clip 0.0000 | ETA: 1.31h (2.70 steps/s)
+
+step 07320/20000 (36.6%) | total 0.0362 | recon 0.0345 | uni 0.0306 | cons 0.0092 | clip 0.0000 | ETA: 1.30h (2.71 steps/s)
+
+step 07340/20000 (36.7%) | total 0.0484 | recon 0.0478 | uni 0.0138 | cons -0.0000 | clip 0.0000 | ETA: 1.30h (2.71 steps/s)
+
+step 07360/20000 (36.8%) | total 0.0611 | recon 0.0590 | uni 0.0185 | cons 0.0632 | clip 0.0000 | ETA: 1.29h (2.71 steps/s)
+
+step 07380/20000 (36.9%) | total 0.1099 | recon 0.1091 | uni 0.0150 | cons -0.0000 | clip 0.0000 | ETA: 1.29h (2.72 steps/s)
+
+step 07400/20000 (37.0%) | total 0.0647 | recon 0.0639 | uni 0.0094 | cons 0.0164 | clip 0.0000 | ETA: 1.28h (2.72 steps/s)
+
+step 07420/20000 (37.1%) | total 0.0655 | recon 0.0646 | uni 0.0192 | cons -0.0000 | clip 0.0000 | ETA: 1.28h (2.73 steps/s)
+
+step 07440/20000 (37.2%) | total 0.0643 | recon 0.0634 | uni 0.0193 | cons -0.0000 | clip 0.0000 | ETA: 1.28h (2.73 steps/s)
+
+step 07460/20000 (37.3%) | total 0.0566 | recon 0.0545 | uni 0.0148 | cons 0.0679 | clip 0.0000 | ETA: 1.27h (2.74 steps/s)
+
+step 07480/20000 (37.4%) | total 0.0782 | recon 0.0772 | uni 0.0100 | cons 0.0244 | clip 0.0000 | ETA: 1.27h (2.74 steps/s)
+
+step 07500/20000 (37.5%) | total 0.0529 | recon 0.0526 | uni 0.0076 | cons -0.0000 | clip 0.0000 | ETA: 1.26h (2.75 steps/s)
+
+step 07520/20000 (37.6%) | total 0.0623 | recon 0.0615 | uni 0.0120 | cons 0.0079 | clip 0.0000 | ETA: 1.26h (2.75 steps/s)
+
+step 07540/20000 (37.7%) | total 0.0629 | recon 0.0625 | uni 0.0089 | cons -0.0000 | clip 0.0000 | ETA: 1.26h (2.76 steps/s)
+
+step 07560/20000 (37.8%) | total 0.0438 | recon 0.0416 | uni 0.0185 | cons 0.0625 | clip 0.0000 | ETA: 1.25h (2.76 steps/s)
+
+step 07580/20000 (37.9%) | total 0.0572 | recon 0.0565 | uni 0.0145 | cons -0.0000 | clip 0.0000 | ETA: 1.25h (2.77 steps/s)
+
+step 07600/20000 (38.0%) | total 0.0790 | recon 0.0772 | uni 0.0145 | cons 0.0561 | clip 0.0000 | ETA: 1.24h (2.77 steps/s)
+
+step 07620/20000 (38.1%) | total 0.0598 | recon 0.0589 | uni 0.0184 | cons -0.0000 | clip 0.0000 | ETA: 1.24h (2.77 steps/s)
+
+step 07640/20000 (38.2%) | total 0.0755 | recon 0.0746 | uni 0.0183 | cons -0.0000 | clip 0.0000 | ETA: 1.24h (2.78 steps/s)
+
+step 07660/20000 (38.3%) | total 0.0369 | recon 0.0355 | uni 0.0132 | cons 0.0376 | clip 0.0000 | ETA: 1.23h (2.78 steps/s)
+
+step 07680/20000 (38.4%) | total 0.0629 | recon 0.0614 | uni 0.0100 | cons 0.0497 | clip 0.0000 | ETA: 1.23h (2.79 steps/s)
+
+step 07700/20000 (38.5%) | total 0.0272 | recon 0.0250 | uni 0.0145 | cons 0.0739 | clip 0.0000 | ETA: 1.22h (2.79 steps/s)
+
+step 07720/20000 (38.6%) | total 0.0461 | recon 0.0455 | uni 0.0115 | cons -0.0000 | clip 0.0000 | ETA: 1.22h (2.80 steps/s)
+
+step 07740/20000 (38.7%) | total 0.1118 | recon 0.1097 | uni 0.0203 | cons 0.0537 | clip 0.0000 | ETA: 1.22h (2.80 steps/s)
+
+step 07760/20000 (38.8%) | total 0.1303 | recon 0.1295 | uni 0.0173 | cons -0.0000 | clip 0.0000 | ETA: 1.21h (2.81 steps/s)
+
+step 07780/20000 (38.9%) | total 0.0786 | recon 0.0762 | uni 0.0176 | cons 0.0765 | clip 0.0000 | ETA: 1.21h (2.81 steps/s)
+
+step 07800/20000 (39.0%) | total 0.1020 | recon 0.1005 | uni 0.0309 | cons -0.0000 | clip 0.0000 | ETA: 1.20h (2.82 steps/s)
+
+step 07820/20000 (39.1%) | total 0.0333 | recon 0.0328 | uni 0.0118 | cons -0.0000 | clip 0.0000 | ETA: 1.20h (2.82 steps/s)
+
+step 07840/20000 (39.2%) | total 0.1058 | recon 0.1041 | uni 0.0120 | cons 0.0545 | clip 0.0000 | ETA: 1.20h (2.82 steps/s)
+
+step 07860/20000 (39.3%) | total 0.0397 | recon 0.0388 | uni 0.0097 | cons 0.0187 | clip 0.0000 | ETA: 1.19h (2.83 steps/s)
+
+step 07880/20000 (39.4%) | total 0.0301 | recon 0.0274 | uni 0.0128 | cons 0.1059 | clip 0.0000 | ETA: 1.19h (2.83 steps/s)
+
+step 07900/20000 (39.5%) | total 0.0649 | recon 0.0637 | uni 0.0256 | cons -0.0000 | clip 0.0000 | ETA: 1.18h (2.84 steps/s)
+
+step 07920/20000 (39.6%) | total 0.0416 | recon 0.0406 | uni 0.0190 | cons -0.0000 | clip 0.0000 | ETA: 1.18h (2.84 steps/s)
+
+step 07940/20000 (39.7%) | total 0.0608 | recon 0.0603 | uni 0.0108 | cons -0.0000 | clip 0.0000 | ETA: 1.18h (2.85 steps/s)
+
+step 07960/20000 (39.8%) | total 0.0448 | recon 0.0437 | uni 0.0126 | cons 0.0226 | clip 0.0000 | ETA: 1.17h (2.85 steps/s)
+
+step 07980/20000 (39.9%) | total 0.0436 | recon 0.0430 | uni 0.0118 | cons -0.0000 | clip 0.0000 | ETA: 1.17h (2.86 steps/s)
+
+step 08000/20000 (40.0%) | total 0.0356 | recon 0.0348 | uni 0.0151 | cons -0.0000 | clip 0.0000 | ETA: 1.17h (2.86 steps/s)
+
+step 08020/20000 (40.1%) | total 0.0387 | recon 0.0380 | uni 0.0139 | cons -0.0000 | clip 0.0000 | ETA: 1.16h (2.86 steps/s)
+
+step 08040/20000 (40.2%) | total 0.0390 | recon 0.0383 | uni 0.0138 | cons -0.0000 | clip 0.0000 | ETA: 1.16h (2.86 steps/s)
+
+step 08060/20000 (40.3%) | total 0.1616 | recon 0.1611 | uni 0.0112 | cons -0.0000 | clip 0.0000 | ETA: 1.16h (2.87 steps/s)
+
+step 08080/20000 (40.4%) | total 0.0421 | recon 0.0401 | uni 0.0296 | cons 0.0247 | clip 0.0000 | ETA: 1.15h (2.87 steps/s)
+
+step 08100/20000 (40.5%) | total 0.0614 | recon 0.0606 | uni 0.0166 | cons -0.0000 | clip 0.0000 | ETA: 1.15h (2.87 steps/s)
+
+step 08120/20000 (40.6%) | total 0.0517 | recon 0.0489 | uni 0.0191 | cons 0.0937 | clip 0.0000 | ETA: 1.15h (2.88 steps/s)
+
+step 08140/20000 (40.7%) | total 0.0668 | recon 0.0659 | uni 0.0180 | cons -0.0000 | clip 0.0000 | ETA: 1.14h (2.88 steps/s)
+
+step 08160/20000 (40.8%) | total 0.0438 | recon 0.0432 | uni 0.0133 | cons -0.0000 | clip 0.0000 | ETA: 1.14h (2.89 steps/s)
+
+step 08180/20000 (40.9%) | total 0.0580 | recon 0.0573 | uni 0.0137 | cons -0.0000 | clip 0.0000 | ETA: 1.14h (2.89 steps/s)
+
+step 08200/20000 (41.0%) | total 0.0663 | recon 0.0643 | uni 0.0410 | cons -0.0000 | clip 0.0000 | ETA: 1.13h (2.90 steps/s)
+
+step 08220/20000 (41.1%) | total 0.0412 | recon 0.0405 | uni 0.0135 | cons -0.0000 | clip 0.0000 | ETA: 1.13h (2.90 steps/s)
+
+step 08240/20000 (41.2%) | total 0.0545 | recon 0.0519 | uni 0.0161 | cons 0.0932 | clip 0.0000 | ETA: 1.12h (2.90 steps/s)
+
+step 08260/20000 (41.3%) | total 0.1344 | recon 0.1328 | uni 0.0172 | cons 0.0408 | clip 0.0000 | ETA: 1.12h (2.91 steps/s)
+
+step 08280/20000 (41.4%) | total 0.0579 | recon 0.0573 | uni 0.0113 | cons -0.0000 | clip 0.0000 | ETA: 1.12h (2.91 steps/s)
+
+step 08300/20000 (41.5%) | total 0.1049 | recon 0.1037 | uni 0.0237 | cons -0.0000 | clip 0.0000 | ETA: 1.11h (2.92 steps/s)
+
+step 08320/20000 (41.6%) | total 0.0991 | recon 0.0964 | uni 0.0279 | cons 0.0654 | clip 0.0000 | ETA: 1.11h (2.92 steps/s)
+
+step 08340/20000 (41.7%) | total 0.0411 | recon 0.0396 | uni 0.0201 | cons 0.0234 | clip 0.0000 | ETA: 1.11h (2.93 steps/s)
+
+step 08360/20000 (41.8%) | total 0.0668 | recon 0.0661 | uni 0.0130 | cons -0.0000 | clip 0.0000 | ETA: 1.10h (2.93 steps/s)
+
+step 08380/20000 (41.9%) | total 0.1104 | recon 0.1098 | uni 0.0132 | cons -0.0000 | clip 0.0000 | ETA: 1.10h (2.93 steps/s)
+
+step 08400/20000 (42.0%) | total 0.0792 | recon 0.0787 | uni 0.0098 | cons -0.0000 | clip 0.0000 | ETA: 1.10h (2.94 steps/s)
+
+step 08420/20000 (42.1%) | total 0.0465 | recon 0.0449 | uni 0.0107 | cons 0.0532 | clip 0.0000 | ETA: 1.09h (2.94 steps/s)
+
+step 08440/20000 (42.2%) | total 0.0854 | recon 0.0834 | uni 0.0095 | cons 0.0735 | clip 0.0000 | ETA: 1.09h (2.95 steps/s)
+
+step 08460/20000 (42.3%) | total 0.0334 | recon 0.0324 | uni 0.0216 | cons -0.0000 | clip 0.0000 | ETA: 1.09h (2.95 steps/s)
+
+step 08480/20000 (42.4%) | total 0.1319 | recon 0.1290 | uni 0.0206 | cons 0.0943 | clip 0.0000 | ETA: 1.08h (2.96 steps/s)
+
+step 08500/20000 (42.5%) | total 0.0612 | recon 0.0585 | uni 0.0227 | cons 0.0758 | clip 0.0000 | ETA: 1.08h (2.96 steps/s)
+
+step 08520/20000 (42.6%) | total 0.1412 | recon 0.1396 | uni 0.0190 | cons 0.0306 | clip 0.0000 | ETA: 1.08h (2.96 steps/s)
+
+step 08540/20000 (42.7%) | total 0.0430 | recon 0.0424 | uni 0.0100 | cons 0.0043 | clip 0.0000 | ETA: 1.07h (2.97 steps/s)
+
+step 08560/20000 (42.8%) | total 0.0264 | recon 0.0236 | uni 0.0176 | cons 0.0924 | clip 0.0000 | ETA: 1.07h (2.97 steps/s)
+
+step 08580/20000 (42.9%) | total 0.0744 | recon 0.0729 | uni 0.0118 | cons 0.0469 | clip 0.0000 | ETA: 1.07h (2.98 steps/s)
+
+step 08600/20000 (43.0%) | total 0.0577 | recon 0.0570 | uni 0.0142 | cons -0.0000 | clip 0.0000 | ETA: 1.06h (2.98 steps/s)
+
+step 08620/20000 (43.1%) | total 0.0423 | recon 0.0417 | uni 0.0116 | cons -0.0000 | clip 0.0000 | ETA: 1.06h (2.98 steps/s)
+
+step 08640/20000 (43.2%) | total 0.0699 | recon 0.0681 | uni 0.0130 | cons 0.0556 | clip 0.0000 | ETA: 1.06h (2.99 steps/s)
+
+step 08660/20000 (43.3%) | total 0.0422 | recon 0.0416 | uni 0.0114 | cons -0.0000 | clip 0.0000 | ETA: 1.05h (2.99 steps/s)
+
+step 08680/20000 (43.4%) | total 0.0557 | recon 0.0549 | uni 0.0160 | cons -0.0000 | clip 0.0000 | ETA: 1.05h (3.00 steps/s)
+
+step 08700/20000 (43.5%) | total 0.0394 | recon 0.0388 | uni 0.0114 | cons -0.0000 | clip 0.0000 | ETA: 1.05h (3.00 steps/s)
+
+step 08720/20000 (43.6%) | total 0.0608 | recon 0.0603 | uni 0.0112 | cons -0.0000 | clip 0.0000 | ETA: 1.04h (3.00 steps/s)
+
+step 08740/20000 (43.7%) | total 0.0993 | recon 0.0962 | uni 0.0226 | cons 0.0974 | clip 0.0000 | ETA: 1.04h (3.01 steps/s)
+
+step 08760/20000 (43.8%) | total 0.0386 | recon 0.0373 | uni 0.0257 | cons -0.0000 | clip 0.0000 | ETA: 1.04h (3.01 steps/s)
+
+step 08780/20000 (43.9%) | total 0.0275 | recon 0.0245 | uni 0.0132 | cons 0.1174 | clip 0.0000 | ETA: 1.03h (3.02 steps/s)
+
+step 08800/20000 (44.0%) | total 0.0470 | recon 0.0461 | uni 0.0178 | cons -0.0000 | clip 0.0000 | ETA: 1.03h (3.02 steps/s)
+
+step 08820/20000 (44.1%) | total 0.0739 | recon 0.0735 | uni 0.0070 | cons -0.0000 | clip 0.0000 | ETA: 1.03h (3.03 steps/s)
+
+step 08840/20000 (44.2%) | total 0.0435 | recon 0.0423 | uni 0.0100 | cons 0.0367 | clip 0.0000 | ETA: 1.02h (3.03 steps/s)
+
+step 08860/20000 (44.3%) | total 0.0815 | recon 0.0809 | uni 0.0119 | cons -0.0000 | clip 0.0000 | ETA: 1.02h (3.03 steps/s)
+
+step 08880/20000 (44.4%) | total 0.0676 | recon 0.0669 | uni 0.0144 | cons -0.0000 | clip 0.0000 | ETA: 1.02h (3.04 steps/s)
+
+step 08900/20000 (44.5%) | total 0.0575 | recon 0.0570 | uni 0.0098 | cons -0.0000 | clip 0.0000 | ETA: 1.01h (3.04 steps/s)
+
+step 08920/20000 (44.6%) | total 0.0370 | recon 0.0365 | uni 0.0100 | cons -0.0000 | clip 0.0000 | ETA: 1.01h (3.05 steps/s)
+
+step 08940/20000 (44.7%) | total 0.1079 | recon 0.1059 | uni 0.0157 | cons 0.0599 | clip 0.0000 | ETA: 1.01h (3.05 steps/s)
+
+step 08960/20000 (44.8%) | total 0.0317 | recon 0.0299 | uni 0.0094 | cons 0.0627 | clip 0.0000 | ETA: 1.00h (3.05 steps/s)
+
+step 08980/20000 (44.9%) | total 0.0736 | recon 0.0729 | uni 0.0135 | cons -0.0000 | clip 0.0000 | ETA: 1.00h (3.06 steps/s)
+
+step 09000/20000 (45.0%) | total 0.0516 | recon 0.0507 | uni 0.0097 | cons 0.0212 | clip 0.0000 | ETA: 1.00h (3.06 steps/s)
+
+step 09020/20000 (45.1%) | total 0.1077 | recon 0.1056 | uni 0.0131 | cons 0.0746 | clip 0.0000 | ETA: 1.00h (3.06 steps/s)
+
+step 09040/20000 (45.2%) | total 0.0833 | recon 0.0829 | uni 0.0092 | cons -0.0000 | clip 0.0000 | ETA: 0.99h (3.06 steps/s)
+
+step 09060/20000 (45.3%) | total 0.0609 | recon 0.0597 | uni 0.0146 | cons 0.0241 | clip 0.0000 | ETA: 0.99h (3.07 steps/s)
+
+step 09080/20000 (45.4%) | total 0.0376 | recon 0.0371 | uni 0.0103 | cons -0.0000 | clip 0.0000 | ETA: 0.99h (3.07 steps/s)
+
+step 09100/20000 (45.5%) | total 0.1145 | recon 0.1124 | uni 0.0230 | cons 0.0480 | clip 0.0000 | ETA: 0.99h (3.07 steps/s)
+
+step 09120/20000 (45.6%) | total 0.0530 | recon 0.0510 | uni 0.0107 | cons 0.0746 | clip 0.0000 | ETA: 0.98h (3.08 steps/s)
+
+step 09140/20000 (45.7%) | total 0.0922 | recon 0.0901 | uni 0.0136 | cons 0.0729 | clip 0.0000 | ETA: 0.98h (3.08 steps/s)
+
+step 09160/20000 (45.8%) | total 0.0643 | recon 0.0634 | uni 0.0118 | cons 0.0141 | clip 0.0000 | ETA: 0.98h (3.09 steps/s)
+
+step 09180/20000 (45.9%) | total 0.0620 | recon 0.0612 | uni 0.0155 | cons -0.0000 | clip 0.0000 | ETA: 0.97h (3.09 steps/s)
+
+step 09200/20000 (46.0%) | total 0.0365 | recon 0.0355 | uni 0.0191 | cons -0.0000 | clip 0.0000 | ETA: 0.97h (3.09 steps/s)
+
+step 09220/20000 (46.1%) | total 0.0547 | recon 0.0535 | uni 0.0233 | cons -0.0000 | clip 0.0000 | ETA: 0.97h (3.10 steps/s)
+
+step 09240/20000 (46.2%) | total 0.0350 | recon 0.0344 | uni 0.0126 | cons -0.0000 | clip 0.0000 | ETA: 0.96h (3.10 steps/s)
+
+step 09260/20000 (46.3%) | total 0.0555 | recon 0.0546 | uni 0.0080 | cons 0.0262 | clip 0.0000 | ETA: 0.96h (3.10 steps/s)
+
+step 09280/20000 (46.4%) | total 0.0267 | recon 0.0253 | uni 0.0078 | cons 0.0497 | clip 0.0000 | ETA: 0.96h (3.11 steps/s)
+
+step 09300/20000 (46.5%) | total 0.1096 | recon 0.1092 | uni 0.0083 | cons -0.0000 | clip 0.0000 | ETA: 0.96h (3.11 steps/s)
+
+step 09320/20000 (46.6%) | total 0.0662 | recon 0.0658 | uni 0.0077 | cons -0.0000 | clip 0.0000 | ETA: 0.95h (3.12 steps/s)
+
+step 09340/20000 (46.7%) | total 0.0823 | recon 0.0818 | uni 0.0093 | cons -0.0000 | clip 0.0000 | ETA: 0.95h (3.12 steps/s)
+
+step 09360/20000 (46.8%) | total 0.0267 | recon 0.0255 | uni 0.0083 | cons 0.0410 | clip 0.0000 | ETA: 0.95h (3.12 steps/s)
+
+step 09380/20000 (46.9%) | total 0.0238 | recon 0.0235 | uni 0.0062 | cons -0.0000 | clip 0.0000 | ETA: 0.94h (3.13 steps/s)
+
+step 09400/20000 (47.0%) | total 0.0603 | recon 0.0596 | uni 0.0095 | cons 0.0089 | clip 0.0000 | ETA: 0.94h (3.13 steps/s)
+
+step 09420/20000 (47.1%) | total 0.0626 | recon 0.0606 | uni 0.0162 | cons 0.0569 | clip 0.0000 | ETA: 0.94h (3.14 steps/s)
+
+step 09440/20000 (47.2%) | total 0.0375 | recon 0.0368 | uni 0.0122 | cons -0.0000 | clip 0.0000 | ETA: 0.93h (3.14 steps/s)
+
+step 09460/20000 (47.3%) | total 0.0439 | recon 0.0426 | uni 0.0097 | cons 0.0402 | clip 0.0000 | ETA: 0.93h (3.14 steps/s)
+
+step 09480/20000 (47.4%) | total 0.0540 | recon 0.0532 | uni 0.0152 | cons -0.0000 | clip 0.0000 | ETA: 0.93h (3.15 steps/s)
+
+step 09500/20000 (47.5%) | total 0.0449 | recon 0.0443 | uni 0.0123 | cons -0.0000 | clip 0.0000 | ETA: 0.93h (3.15 steps/s)
+
+step 09520/20000 (47.6%) | total 0.1038 | recon 0.1031 | uni 0.0139 | cons -0.0000 | clip 0.0000 | ETA: 0.92h (3.15 steps/s)
+
+step 09540/20000 (47.7%) | total 0.0659 | recon 0.0646 | uni 0.0118 | cons 0.0366 | clip 0.0000 | ETA: 0.92h (3.16 steps/s)
+
+step 09560/20000 (47.8%) | total 0.0394 | recon 0.0382 | uni 0.0105 | cons 0.0309 | clip 0.0000 | ETA: 0.92h (3.16 steps/s)
+
+step 09580/20000 (47.9%) | total 0.0628 | recon 0.0579 | uni 0.0419 | cons 0.1409 | clip 0.0000 | ETA: 0.91h (3.16 steps/s)
+
+step 09600/20000 (48.0%) | total 0.0766 | recon 0.0760 | uni 0.0124 | cons -0.0000 | clip 0.0000 | ETA: 0.91h (3.17 steps/s)
+
+step 09620/20000 (48.1%) | total 0.0573 | recon 0.0567 | uni 0.0109 | cons -0.0000 | clip 0.0000 | ETA: 0.91h (3.17 steps/s)
+
+step 09640/20000 (48.2%) | total 0.0334 | recon 0.0322 | uni 0.0110 | cons 0.0350 | clip 0.0000 | ETA: 0.91h (3.18 steps/s)
+
+step 09660/20000 (48.3%) | total 0.0791 | recon 0.0776 | uni 0.0137 | cons 0.0440 | clip 0.0000 | ETA: 0.90h (3.18 steps/s)
+
+step 09680/20000 (48.4%) | total 0.0581 | recon 0.0577 | uni 0.0071 | cons -0.0000 | clip 0.0000 | ETA: 0.90h (3.18 steps/s)
+
+step 09700/20000 (48.5%) | total 0.0196 | recon 0.0189 | uni 0.0139 | cons -0.0000 | clip 0.0000 | ETA: 0.90h (3.19 steps/s)
+
+step 09720/20000 (48.6%) | total 0.0565 | recon 0.0551 | uni 0.0098 | cons 0.0452 | clip 0.0000 | ETA: 0.89h (3.19 steps/s)
+
+step 09740/20000 (48.7%) | total 0.0735 | recon 0.0711 | uni 0.0158 | cons 0.0795 | clip 0.0000 | ETA: 0.89h (3.19 steps/s)
+
+step 09760/20000 (48.8%) | total 0.0755 | recon 0.0746 | uni 0.0086 | cons 0.0244 | clip 0.0000 | ETA: 0.89h (3.20 steps/s)
+
+step 09780/20000 (48.9%) | total 0.0474 | recon 0.0468 | uni 0.0109 | cons -0.0000 | clip 0.0000 | ETA: 0.89h (3.20 steps/s)
+
+step 09800/20000 (49.0%) | total 0.0490 | recon 0.0449 | uni 0.0159 | cons 0.1686 | clip 0.0000 | ETA: 0.88h (3.21 steps/s)
+
+step 09820/20000 (49.1%) | total 0.0759 | recon 0.0748 | uni 0.0083 | cons 0.0363 | clip 0.0000 | ETA: 0.88h (3.21 steps/s)
+
+step 09840/20000 (49.2%) | total 0.0726 | recon 0.0721 | uni 0.0114 | cons -0.0000 | clip 0.0000 | ETA: 0.88h (3.21 steps/s)
+
+step 09860/20000 (49.3%) | total 0.0416 | recon 0.0389 | uni 0.0130 | cons 0.1038 | clip 0.0000 | ETA: 0.88h (3.22 steps/s)
+
+step 09880/20000 (49.4%) | total 0.0678 | recon 0.0667 | uni 0.0156 | cons 0.0151 | clip 0.0000 | ETA: 0.87h (3.22 steps/s)
+
+step 09900/20000 (49.5%) | total 0.0415 | recon 0.0407 | uni 0.0086 | cons 0.0218 | clip 0.0000 | ETA: 0.87h (3.22 steps/s)
+
+step 09920/20000 (49.6%) | total 0.0565 | recon 0.0560 | uni 0.0108 | cons -0.0000 | clip 0.0000 | ETA: 0.87h (3.23 steps/s)
+
+step 09940/20000 (49.7%) | total 0.0304 | recon 0.0281 | uni 0.0157 | cons 0.0750 | clip 0.0000 | ETA: 0.86h (3.23 steps/s)
+
+step 09960/20000 (49.8%) | total 0.0715 | recon 0.0699 | uni 0.0090 | cons 0.0600 | clip 0.0000 | ETA: 0.86h (3.23 steps/s)
+
+step 09980/20000 (49.9%) | total 0.1008 | recon 0.0995 | uni 0.0202 | cons 0.0164 | clip 0.0000 | ETA: 0.86h (3.24 steps/s)
+
+step 10000/20000 (50.0%) | total 0.0727 | recon 0.0714 | uni 0.0145 | cons 0.0286 | clip 0.0000 | ETA: 0.86h (3.24 steps/s)
+
+step 10020/20000 (50.1%) | total 0.1206 | recon 0.1185 | uni 0.0164 | cons 0.0640 | clip 0.0000 | ETA: 0.86h (3.24 steps/s)
+
+step 10040/20000 (50.2%) | total 0.0689 | recon 0.0685 | uni 0.0094 | cons -0.0000 | clip 0.0000 | ETA: 0.85h (3.24 steps/s)
+
+step 10060/20000 (50.3%) | total 0.0793 | recon 0.0789 | uni 0.0084 | cons -0.0000 | clip 0.0000 | ETA: 0.85h (3.24 steps/s)
+
+step 10080/20000 (50.4%) | total 0.0738 | recon 0.0733 | uni 0.0115 | cons -0.0000 | clip 0.0000 | ETA: 0.85h (3.25 steps/s)
+
+step 10100/20000 (50.5%) | total 0.0328 | recon 0.0320 | uni 0.0163 | cons -0.0000 | clip 0.0000 | ETA: 0.85h (3.25 steps/s)
+
+step 10120/20000 (50.6%) | total 0.0723 | recon 0.0720 | uni 0.0059 | cons -0.0000 | clip 0.0000 | ETA: 0.84h (3.25 steps/s)
+
+step 10140/20000 (50.7%) | total 0.1006 | recon 0.1001 | uni 0.0104 | cons -0.0000 | clip 0.0000 | ETA: 0.84h (3.26 steps/s)
+
+step 10160/20000 (50.8%) | total 0.0593 | recon 0.0585 | uni 0.0070 | cons 0.0233 | clip 0.0000 | ETA: 0.84h (3.26 steps/s)
+
+step 10180/20000 (50.9%) | total 0.0555 | recon 0.0547 | uni 0.0146 | cons -0.0000 | clip 0.0000 | ETA: 0.84h (3.27 steps/s)
+
+step 10200/20000 (51.0%) | total 0.0989 | recon 0.0982 | uni 0.0140 | cons -0.0000 | clip 0.0000 | ETA: 0.83h (3.27 steps/s)
+
+step 10220/20000 (51.1%) | total 0.0461 | recon 0.0428 | uni 0.0226 | cons 0.1102 | clip 0.0000 | ETA: 0.83h (3.27 steps/s)
+
+step 10240/20000 (51.2%) | total 0.0856 | recon 0.0838 | uni 0.0351 | cons -0.0000 | clip 0.0000 | ETA: 0.83h (3.28 steps/s)
+
+step 10260/20000 (51.3%) | total 0.0368 | recon 0.0364 | uni 0.0087 | cons -0.0000 | clip 0.0000 | ETA: 0.83h (3.28 steps/s)
+
+step 10280/20000 (51.4%) | total 0.0921 | recon 0.0914 | uni 0.0141 | cons -0.0000 | clip 0.0000 | ETA: 0.82h (3.28 steps/s)
+
+step 10300/20000 (51.5%) | total 0.0342 | recon 0.0335 | uni 0.0063 | cons 0.0211 | clip 0.0000 | ETA: 0.82h (3.29 steps/s)
+
+step 10320/20000 (51.6%) | total 0.0855 | recon 0.0842 | uni 0.0119 | cons 0.0361 | clip 0.0000 | ETA: 0.82h (3.29 steps/s)
+
+step 10340/20000 (51.7%) | total 0.0952 | recon 0.0928 | uni 0.0162 | cons 0.0762 | clip 0.0000 | ETA: 0.81h (3.29 steps/s)
+
+step 10360/20000 (51.8%) | total 0.1221 | recon 0.1217 | uni 0.0083 | cons -0.0000 | clip 0.0000 | ETA: 0.81h (3.30 steps/s)
+
+step 10380/20000 (51.9%) | total 0.0962 | recon 0.0953 | uni 0.0060 | cons 0.0297 | clip 0.0000 | ETA: 0.81h (3.30 steps/s)
+
+step 10400/20000 (52.0%) | total 0.0900 | recon 0.0888 | uni 0.0122 | cons 0.0280 | clip 0.0000 | ETA: 0.81h (3.30 steps/s)
+
+step 10420/20000 (52.1%) | total 0.0524 | recon 0.0516 | uni 0.0097 | cons 0.0199 | clip 0.0000 | ETA: 0.80h (3.31 steps/s)
+
+step 10440/20000 (52.2%) | total 0.0647 | recon 0.0628 | uni 0.0131 | cons 0.0627 | clip 0.0000 | ETA: 0.80h (3.31 steps/s)
+
+step 10460/20000 (52.3%) | total 0.0399 | recon 0.0392 | uni 0.0129 | cons -0.0000 | clip 0.0000 | ETA: 0.80h (3.31 steps/s)
+
+step 10480/20000 (52.4%) | total 0.0494 | recon 0.0491 | uni 0.0072 | cons -0.0000 | clip 0.0000 | ETA: 0.80h (3.32 steps/s)
+
+step 10500/20000 (52.5%) | total 0.0795 | recon 0.0782 | uni 0.0094 | cons 0.0409 | clip 0.0000 | ETA: 0.79h (3.32 steps/s)
+
+step 10520/20000 (52.6%) | total 0.0375 | recon 0.0371 | uni 0.0090 | cons -0.0000 | clip 0.0000 | ETA: 0.79h (3.32 steps/s)
+
+step 10540/20000 (52.7%) | total 0.0249 | recon 0.0246 | uni 0.0072 | cons -0.0000 | clip 0.0000 | ETA: 0.79h (3.33 steps/s)
+
+step 10560/20000 (52.8%) | total 0.0344 | recon 0.0334 | uni 0.0072 | cons 0.0306 | clip 0.0000 | ETA: 0.79h (3.33 steps/s)
+
+step 10580/20000 (52.9%) | total 0.0526 | recon 0.0514 | uni 0.0108 | cons 0.0367 | clip 0.0000 | ETA: 0.78h (3.33 steps/s)
+
+step 10600/20000 (53.0%) | total 0.1090 | recon 0.1073 | uni 0.0099 | cons 0.0604 | clip 0.0000 | ETA: 0.78h (3.34 steps/s)
+
+step 10620/20000 (53.1%) | total 0.0247 | recon 0.0239 | uni 0.0172 | cons -0.0000 | clip 0.0000 | ETA: 0.78h (3.34 steps/s)
+
+step 10640/20000 (53.2%) | total 0.0704 | recon 0.0702 | uni 0.0049 | cons -0.0000 | clip 0.0000 | ETA: 0.78h (3.34 steps/s)
+
+step 10660/20000 (53.3%) | total 0.0484 | recon 0.0480 | uni 0.0086 | cons -0.0000 | clip 0.0000 | ETA: 0.78h (3.35 steps/s)
+
+step 10680/20000 (53.4%) | total 0.0487 | recon 0.0479 | uni 0.0150 | cons -0.0000 | clip 0.0000 | ETA: 0.77h (3.35 steps/s)
+
+step 10700/20000 (53.5%) | total 0.0729 | recon 0.0718 | uni 0.0236 | cons -0.0000 | clip 0.0000 | ETA: 0.77h (3.35 steps/s)
+
+step 10720/20000 (53.6%) | total 0.0729 | recon 0.0725 | uni 0.0078 | cons -0.0000 | clip 0.0000 | ETA: 0.77h (3.36 steps/s)
+
+step 10740/20000 (53.7%) | total 0.0836 | recon 0.0822 | uni 0.0100 | cons 0.0453 | clip 0.0000 | ETA: 0.77h (3.36 steps/s)
+
+step 10760/20000 (53.8%) | total 0.0415 | recon 0.0409 | uni 0.0079 | cons 0.0110 | clip 0.0000 | ETA: 0.76h (3.36 steps/s)
+
+step 10780/20000 (53.9%) | total 0.0428 | recon 0.0416 | uni 0.0080 | cons 0.0408 | clip 0.0000 | ETA: 0.76h (3.37 steps/s)
+
+step 10800/20000 (54.0%) | total 0.0658 | recon 0.0651 | uni 0.0095 | cons 0.0136 | clip 0.0000 | ETA: 0.76h (3.37 steps/s)
+
+step 10820/20000 (54.1%) | total 0.0349 | recon 0.0346 | uni 0.0073 | cons -0.0000 | clip 0.0000 | ETA: 0.76h (3.37 steps/s)
+
+step 10840/20000 (54.2%) | total 0.0535 | recon 0.0530 | uni 0.0098 | cons -0.0000 | clip 0.0000 | ETA: 0.75h (3.38 steps/s)
+
+step 10860/20000 (54.3%) | total 0.0631 | recon 0.0622 | uni 0.0177 | cons -0.0000 | clip 0.0000 | ETA: 0.75h (3.38 steps/s)
+
+step 10880/20000 (54.4%) | total 0.0317 | recon 0.0307 | uni 0.0080 | cons 0.0288 | clip 0.0000 | ETA: 0.75h (3.38 steps/s)
+
+step 10900/20000 (54.5%) | total 0.0782 | recon 0.0777 | uni 0.0095 | cons -0.0000 | clip 0.0000 | ETA: 0.75h (3.39 steps/s)
+
+step 10920/20000 (54.6%) | total 0.0785 | recon 0.0780 | uni 0.0096 | cons -0.0000 | clip 0.0000 | ETA: 0.74h (3.39 steps/s)
+
+step 10940/20000 (54.7%) | total 0.0479 | recon 0.0476 | uni 0.0064 | cons -0.0000 | clip 0.0000 | ETA: 0.74h (3.39 steps/s)
+
+step 10960/20000 (54.8%) | total 0.1005 | recon 0.0996 | uni 0.0080 | cons 0.0230 | clip 0.0000 | ETA: 0.74h (3.40 steps/s)
+
+step 10980/20000 (54.9%) | total 0.0818 | recon 0.0812 | uni 0.0102 | cons -0.0000 | clip 0.0000 | ETA: 0.74h (3.40 steps/s)
+
+step 11000/20000 (55.0%) | total 0.0286 | recon 0.0279 | uni 0.0144 | cons -0.0000 | clip 0.0000 | ETA: 0.73h (3.40 steps/s)
+
+step 11020/20000 (55.1%) | total 0.0494 | recon 0.0477 | uni 0.0077 | cons 0.0680 | clip 0.0000 | ETA: 0.73h (3.40 steps/s)
+
+step 11040/20000 (55.2%) | total 0.0332 | recon 0.0326 | uni 0.0116 | cons -0.0000 | clip 0.0000 | ETA: 0.73h (3.40 steps/s)
+
+step 11060/20000 (55.3%) | total 0.0396 | recon 0.0391 | uni 0.0096 | cons -0.0000 | clip 0.0000 | ETA: 0.73h (3.41 steps/s)
+
+step 11080/20000 (55.4%) | total 0.0309 | recon 0.0284 | uni 0.0158 | cons 0.0827 | clip 0.0000 | ETA: 0.73h (3.41 steps/s)
+
+step 11100/20000 (55.5%) | total 0.0791 | recon 0.0783 | uni 0.0085 | cons 0.0180 | clip 0.0000 | ETA: 0.72h (3.41 steps/s)
+
+step 11120/20000 (55.6%) | total 0.0773 | recon 0.0756 | uni 0.0074 | cons 0.0680 | clip 0.0000 | ETA: 0.72h (3.42 steps/s)
+
+step 11140/20000 (55.7%) | total 0.0959 | recon 0.0954 | uni 0.0095 | cons -0.0000 | clip 0.0000 | ETA: 0.72h (3.42 steps/s)
+
+step 11160/20000 (55.8%) | total 0.0308 | recon 0.0302 | uni 0.0123 | cons -0.0000 | clip 0.0000 | ETA: 0.72h (3.42 steps/s)
+
+step 11180/20000 (55.9%) | total 0.0807 | recon 0.0803 | uni 0.0087 | cons -0.0000 | clip 0.0000 | ETA: 0.72h (3.43 steps/s)
+
+step 11200/20000 (56.0%) | total 0.0736 | recon 0.0722 | uni 0.0131 | cons 0.0373 | clip 0.0000 | ETA: 0.71h (3.43 steps/s)
+
+step 11220/20000 (56.1%) | total 0.1252 | recon 0.1228 | uni 0.0175 | cons 0.0752 | clip 0.0000 | ETA: 0.71h (3.43 steps/s)
+
+step 11240/20000 (56.2%) | total 0.0879 | recon 0.0873 | uni 0.0120 | cons -0.0000 | clip 0.0000 | ETA: 0.71h (3.44 steps/s)
+
+step 11260/20000 (56.3%) | total 0.0653 | recon 0.0632 | uni 0.0153 | cons 0.0648 | clip 0.0000 | ETA: 0.71h (3.44 steps/s)
+
+step 11280/20000 (56.4%) | total 0.0808 | recon 0.0792 | uni 0.0120 | cons 0.0507 | clip 0.0000 | ETA: 0.70h (3.44 steps/s)
+
+step 11300/20000 (56.5%) | total 0.0306 | recon 0.0303 | uni 0.0050 | cons -0.0000 | clip 0.0000 | ETA: 0.70h (3.45 steps/s)
+
+step 11320/20000 (56.6%) | total 0.0340 | recon 0.0326 | uni 0.0072 | cons 0.0537 | clip 0.0000 | ETA: 0.70h (3.45 steps/s)
+
+step 11340/20000 (56.7%) | total 0.0307 | recon 0.0304 | uni 0.0070 | cons -0.0000 | clip 0.0000 | ETA: 0.70h (3.45 steps/s)
+
+step 11360/20000 (56.8%) | total 0.0836 | recon 0.0810 | uni 0.0125 | cons 0.0967 | clip 0.0000 | ETA: 0.69h (3.45 steps/s)
+
+step 11380/20000 (56.9%) | total 0.0797 | recon 0.0792 | uni 0.0085 | cons -0.0000 | clip 0.0000 | ETA: 0.69h (3.46 steps/s)
+
+step 11400/20000 (57.0%) | total 0.0335 | recon 0.0323 | uni 0.0064 | cons 0.0442 | clip 0.0000 | ETA: 0.69h (3.46 steps/s)
+
+step 11420/20000 (57.1%) | total 0.0258 | recon 0.0252 | uni 0.0108 | cons -0.0000 | clip 0.0000 | ETA: 0.69h (3.46 steps/s)
+
+step 11440/20000 (57.2%) | total 0.1564 | recon 0.1560 | uni 0.0069 | cons -0.0000 | clip 0.0000 | ETA: 0.69h (3.47 steps/s)
+
+step 11460/20000 (57.3%) | total 0.0434 | recon 0.0429 | uni 0.0107 | cons -0.0000 | clip 0.0000 | ETA: 0.68h (3.47 steps/s)
+
+step 11480/20000 (57.4%) | total 0.0442 | recon 0.0433 | uni 0.0192 | cons -0.0000 | clip 0.0000 | ETA: 0.68h (3.47 steps/s)
+
+step 11500/20000 (57.5%) | total 0.0233 | recon 0.0228 | uni 0.0110 | cons -0.0000 | clip 0.0000 | ETA: 0.68h (3.48 steps/s)
+
+step 11520/20000 (57.6%) | total 0.0955 | recon 0.0938 | uni 0.0080 | cons 0.0678 | clip 0.0000 | ETA: 0.68h (3.48 steps/s)
+
+step 11540/20000 (57.7%) | total 0.0676 | recon 0.0650 | uni 0.0352 | cons 0.0408 | clip 0.0000 | ETA: 0.67h (3.48 steps/s)
+
+step 11560/20000 (57.8%) | total 0.0549 | recon 0.0543 | uni 0.0113 | cons -0.0000 | clip 0.0000 | ETA: 0.67h (3.49 steps/s)
+
+step 11580/20000 (57.9%) | total 0.1075 | recon 0.1048 | uni 0.0308 | cons 0.0547 | clip 0.0000 | ETA: 0.67h (3.49 steps/s)
+
+step 11600/20000 (58.0%) | total 0.0435 | recon 0.0431 | uni 0.0090 | cons -0.0000 | clip 0.0000 | ETA: 0.67h (3.49 steps/s)
+
+step 11620/20000 (58.1%) | total 0.0415 | recon 0.0399 | uni 0.0087 | cons 0.0614 | clip 0.0000 | ETA: 0.67h (3.50 steps/s)
+
+step 11640/20000 (58.2%) | total 0.1090 | recon 0.1080 | uni 0.0194 | cons -0.0000 | clip 0.0000 | ETA: 0.66h (3.50 steps/s)
+
+step 11660/20000 (58.3%) | total 0.0866 | recon 0.0841 | uni 0.0239 | cons 0.0666 | clip 0.0000 | ETA: 0.66h (3.50 steps/s)
+
+step 11680/20000 (58.4%) | total 0.0330 | recon 0.0322 | uni 0.0063 | cons 0.0219 | clip 0.0000 | ETA: 0.66h (3.50 steps/s)
+
+step 11700/20000 (58.5%) | total 0.0254 | recon 0.0243 | uni 0.0089 | cons 0.0323 | clip 0.0000 | ETA: 0.66h (3.51 steps/s)
+
+step 11720/20000 (58.6%) | total 0.0550 | recon 0.0540 | uni 0.0064 | cons 0.0323 | clip 0.0000 | ETA: 0.66h (3.51 steps/s)
+
+step 11740/20000 (58.7%) | total 0.1375 | recon 0.1366 | uni 0.0168 | cons -0.0000 | clip 0.0000 | ETA: 0.65h (3.51 steps/s)
+
+step 11760/20000 (58.8%) | total 0.0219 | recon 0.0216 | uni 0.0066 | cons -0.0000 | clip 0.0000 | ETA: 0.65h (3.52 steps/s)
+
+step 11780/20000 (58.9%) | total 0.0637 | recon 0.0631 | uni 0.0112 | cons -0.0000 | clip 0.0000 | ETA: 0.65h (3.52 steps/s)
+
+step 11800/20000 (59.0%) | total 0.0642 | recon 0.0633 | uni 0.0171 | cons -0.0000 | clip 0.0000 | ETA: 0.65h (3.52 steps/s)
+
+step 11820/20000 (59.1%) | total 0.1028 | recon 0.1024 | uni 0.0080 | cons -0.0000 | clip 0.0000 | ETA: 0.64h (3.53 steps/s)
+
+step 11840/20000 (59.2%) | total 0.0292 | recon 0.0275 | uni 0.0080 | cons 0.0654 | clip 0.0000 | ETA: 0.64h (3.53 steps/s)
+
+step 11860/20000 (59.3%) | total 0.0667 | recon 0.0663 | uni 0.0081 | cons -0.0000 | clip 0.0000 | ETA: 0.64h (3.53 steps/s)
+
+step 11880/20000 (59.4%) | total 0.0261 | recon 0.0253 | uni 0.0164 | cons -0.0000 | clip 0.0000 | ETA: 0.64h (3.54 steps/s)
+
+step 11900/20000 (59.5%) | total 0.0332 | recon 0.0329 | uni 0.0060 | cons -0.0000 | clip 0.0000 | ETA: 0.64h (3.54 steps/s)
+
+step 11920/20000 (59.6%) | total 0.0562 | recon 0.0557 | uni 0.0099 | cons -0.0000 | clip 0.0000 | ETA: 0.63h (3.54 steps/s)
+
+step 11940/20000 (59.7%) | total 0.0660 | recon 0.0648 | uni 0.0241 | cons -0.0000 | clip 0.0000 | ETA: 0.63h (3.54 steps/s)
+
+step 11960/20000 (59.8%) | total 0.0590 | recon 0.0585 | uni 0.0105 | cons -0.0000 | clip 0.0000 | ETA: 0.63h (3.55 steps/s)
+
+step 11980/20000 (59.9%) | total 0.0885 | recon 0.0877 | uni 0.0084 | cons 0.0199 | clip 0.0000 | ETA: 0.63h (3.55 steps/s)
+
+step 12000/20000 (60.0%) | total 0.0748 | recon 0.0743 | uni 0.0097 | cons -0.0000 | clip 0.0000 | ETA: 0.63h (3.55 steps/s)
+
+step 12020/20000 (60.1%) | total 0.0851 | recon 0.0842 | uni 0.0183 | cons -0.0000 | clip 0.0000 | ETA: 0.62h (3.55 steps/s)
+
+step 12040/20000 (60.2%) | total 0.0798 | recon 0.0795 | uni 0.0071 | cons -0.0000 | clip 0.0000 | ETA: 0.62h (3.55 steps/s)
+
+step 12060/20000 (60.3%) | total 0.0572 | recon 0.0568 | uni 0.0072 | cons -0.0000 | clip 0.0000 | ETA: 0.62h (3.56 steps/s)
+
+step 12080/20000 (60.4%) | total 0.0897 | recon 0.0893 | uni 0.0076 | cons -0.0000 | clip 0.0000 | ETA: 0.62h (3.56 steps/s)
+
+step 12100/20000 (60.5%) | total 0.0861 | recon 0.0852 | uni 0.0164 | cons -0.0000 | clip 0.0000 | ETA: 0.62h (3.56 steps/s)
+
+step 12120/20000 (60.6%) | total 0.0759 | recon 0.0734 | uni 0.0086 | cons 0.1047 | clip 0.0000 | ETA: 0.61h (3.56 steps/s)
+
+step 12140/20000 (60.7%) | total 0.0462 | recon 0.0436 | uni 0.0092 | cons 0.1084 | clip 0.0000 | ETA: 0.61h (3.57 steps/s)
+
+step 12160/20000 (60.8%) | total 0.0307 | recon 0.0297 | uni 0.0074 | cons 0.0292 | clip 0.0000 | ETA: 0.61h (3.57 steps/s)
+
+step 12180/20000 (60.9%) | total 0.0707 | recon 0.0695 | uni 0.0105 | cons 0.0330 | clip 0.0000 | ETA: 0.61h (3.57 steps/s)
+
+step 12200/20000 (61.0%) | total 0.0539 | recon 0.0535 | uni 0.0066 | cons -0.0000 | clip 0.0000 | ETA: 0.61h (3.58 steps/s)
+
+step 12220/20000 (61.1%) | total 0.0292 | recon 0.0288 | uni 0.0086 | cons -0.0000 | clip 0.0000 | ETA: 0.60h (3.58 steps/s)
+
+step 12240/20000 (61.2%) | total 0.0619 | recon 0.0616 | uni 0.0072 | cons -0.0000 | clip 0.0000 | ETA: 0.60h (3.58 steps/s)
+
+step 12260/20000 (61.3%) | total 0.0308 | recon 0.0303 | uni 0.0092 | cons -0.0000 | clip 0.0000 | ETA: 0.60h (3.58 steps/s)
+
+step 12280/20000 (61.4%) | total 0.0604 | recon 0.0598 | uni 0.0132 | cons -0.0000 | clip 0.0000 | ETA: 0.60h (3.59 steps/s)
+
+step 12300/20000 (61.5%) | total 0.0263 | recon 0.0259 | uni 0.0086 | cons -0.0000 | clip 0.0000 | ETA: 0.60h (3.59 steps/s)
+
+step 12320/20000 (61.6%) | total 0.0976 | recon 0.0958 | uni 0.0184 | cons 0.0451 | clip 0.0000 | ETA: 0.59h (3.59 steps/s)
+
+step 12340/20000 (61.7%) | total 0.0477 | recon 0.0473 | uni 0.0071 | cons -0.0000 | clip 0.0000 | ETA: 0.59h (3.60 steps/s)
+
+step 12360/20000 (61.8%) | total 0.0422 | recon 0.0405 | uni 0.0142 | cons 0.0511 | clip 0.0000 | ETA: 0.59h (3.60 steps/s)
+
+step 12380/20000 (61.9%) | total 0.1110 | recon 0.1090 | uni 0.0150 | cons 0.0611 | clip 0.0000 | ETA: 0.59h (3.60 steps/s)
+
+step 12400/20000 (62.0%) | total 0.0942 | recon 0.0933 | uni 0.0189 | cons -0.0000 | clip 0.0000 | ETA: 0.59h (3.61 steps/s)
+
+step 12420/20000 (62.1%) | total 0.0420 | recon 0.0404 | uni 0.0077 | cons 0.0638 | clip 0.0000 | ETA: 0.58h (3.61 steps/s)
+
+step 12440/20000 (62.2%) | total 0.0351 | recon 0.0345 | uni 0.0116 | cons -0.0000 | clip 0.0000 | ETA: 0.58h (3.61 steps/s)
+
+step 12460/20000 (62.3%) | total 0.0390 | recon 0.0383 | uni 0.0134 | cons -0.0000 | clip 0.0000 | ETA: 0.58h (3.61 steps/s)
+
+step 12480/20000 (62.4%) | total 0.0542 | recon 0.0537 | uni 0.0095 | cons -0.0000 | clip 0.0000 | ETA: 0.58h (3.62 steps/s)
+
+step 12500/20000 (62.5%) | total 0.0656 | recon 0.0651 | uni 0.0099 | cons -0.0000 | clip 0.0000 | ETA: 0.58h (3.62 steps/s)
+
+step 12520/20000 (62.6%) | total 0.0574 | recon 0.0569 | uni 0.0102 | cons -0.0000 | clip 0.0000 | ETA: 0.57h (3.62 steps/s)
+
+step 12540/20000 (62.7%) | total 0.0665 | recon 0.0659 | uni 0.0046 | cons 0.0202 | clip 0.0000 | ETA: 0.57h (3.63 steps/s)
+
+step 12560/20000 (62.8%) | total 0.0272 | recon 0.0266 | uni 0.0114 | cons -0.0000 | clip 0.0000 | ETA: 0.57h (3.63 steps/s)
+
+step 12580/20000 (62.9%) | total 0.0497 | recon 0.0491 | uni 0.0123 | cons -0.0000 | clip 0.0000 | ETA: 0.57h (3.63 steps/s)
+
+step 12600/20000 (63.0%) | total 0.0760 | recon 0.0756 | uni 0.0081 | cons -0.0000 | clip 0.0000 | ETA: 0.57h (3.63 steps/s)
+
+step 12620/20000 (63.1%) | total 0.1389 | recon 0.1347 | uni 0.0834 | cons -0.0000 | clip 0.0000 | ETA: 0.56h (3.64 steps/s)
+
+step 12640/20000 (63.2%) | total 0.0343 | recon 0.0336 | uni 0.0144 | cons -0.0000 | clip 0.0000 | ETA: 0.56h (3.64 steps/s)
+
+step 12660/20000 (63.3%) | total 0.1124 | recon 0.1107 | uni 0.0111 | cons 0.0597 | clip 0.0000 | ETA: 0.56h (3.64 steps/s)
+
+step 12680/20000 (63.4%) | total 0.1254 | recon 0.1252 | uni 0.0046 | cons -0.0000 | clip 0.0000 | ETA: 0.56h (3.65 steps/s)
+
+step 12700/20000 (63.5%) | total 0.0882 | recon 0.0873 | uni 0.0054 | cons 0.0306 | clip 0.0000 | ETA: 0.56h (3.65 steps/s)
+
+step 12720/20000 (63.6%) | total 0.0463 | recon 0.0458 | uni 0.0108 | cons -0.0000 | clip 0.0000 | ETA: 0.55h (3.65 steps/s)
+
+step 12740/20000 (63.7%) | total 0.0495 | recon 0.0480 | uni 0.0299 | cons -0.0000 | clip 0.0000 | ETA: 0.55h (3.65 steps/s)
+
+step 12760/20000 (63.8%) | total 0.0303 | recon 0.0299 | uni 0.0074 | cons -0.0000 | clip 0.0000 | ETA: 0.55h (3.66 steps/s)
+
+step 12780/20000 (63.9%) | total 0.0484 | recon 0.0468 | uni 0.0127 | cons 0.0474 | clip 0.0000 | ETA: 0.55h (3.66 steps/s)
+
+step 12800/20000 (64.0%) | total 0.0391 | recon 0.0382 | uni 0.0096 | cons 0.0210 | clip 0.0000 | ETA: 0.55h (3.66 steps/s)
+
+step 12820/20000 (64.1%) | total 0.0371 | recon 0.0365 | uni 0.0130 | cons -0.0000 | clip 0.0000 | ETA: 0.54h (3.66 steps/s)
+
+step 12840/20000 (64.2%) | total 0.0413 | recon 0.0405 | uni 0.0070 | cons 0.0210 | clip 0.0000 | ETA: 0.54h (3.67 steps/s)
+
+step 12860/20000 (64.3%) | total 0.0321 | recon 0.0318 | uni 0.0071 | cons -0.0000 | clip 0.0000 | ETA: 0.54h (3.67 steps/s)
+
+step 12880/20000 (64.4%) | total 0.0361 | recon 0.0350 | uni 0.0216 | cons -0.0000 | clip 0.0000 | ETA: 0.54h (3.67 steps/s)
+
+step 12900/20000 (64.5%) | total 0.0503 | recon 0.0482 | uni 0.0169 | cons 0.0617 | clip 0.0000 | ETA: 0.54h (3.68 steps/s)
+
+step 12920/20000 (64.6%) | total 0.0584 | recon 0.0579 | uni 0.0087 | cons -0.0000 | clip 0.0000 | ETA: 0.53h (3.68 steps/s)
+
+step 12940/20000 (64.7%) | total 0.0211 | recon 0.0207 | uni 0.0071 | cons -0.0000 | clip 0.0000 | ETA: 0.53h (3.68 steps/s)
+
+step 12960/20000 (64.8%) | total 0.0963 | recon 0.0952 | uni 0.0094 | cons 0.0324 | clip 0.0000 | ETA: 0.53h (3.68 steps/s)
+
+step 12980/20000 (64.9%) | total 0.0307 | recon 0.0292 | uni 0.0061 | cons 0.0582 | clip 0.0000 | ETA: 0.53h (3.69 steps/s)
+
+step 13000/20000 (65.0%) | total 0.1143 | recon 0.1139 | uni 0.0077 | cons -0.0000 | clip 0.0000 | ETA: 0.53h (3.69 steps/s)
+
+step 13020/20000 (65.1%) | total 0.0368 | recon 0.0363 | uni 0.0097 | cons -0.0000 | clip 0.0000 | ETA: 0.53h (3.68 steps/s)
+
+step 13040/20000 (65.2%) | total 0.0550 | recon 0.0546 | uni 0.0063 | cons -0.0000 | clip 0.0000 | ETA: 0.52h (3.69 steps/s)
+
+step 13060/20000 (65.3%) | total 0.0870 | recon 0.0867 | uni 0.0074 | cons -0.0000 | clip 0.0000 | ETA: 0.52h (3.69 steps/s)
+
+step 13080/20000 (65.4%) | total 0.1333 | recon 0.1324 | uni 0.0190 | cons -0.0000 | clip 0.0000 | ETA: 0.52h (3.69 steps/s)
+
+step 13100/20000 (65.5%) | total 0.1450 | recon 0.1442 | uni 0.0169 | cons -0.0000 | clip 0.0000 | ETA: 0.52h (3.70 steps/s)
+
+step 13120/20000 (65.6%) | total 0.0960 | recon 0.0957 | uni 0.0062 | cons -0.0000 | clip 0.0000 | ETA: 0.52h (3.70 steps/s)
+
+step 13140/20000 (65.7%) | total 0.0568 | recon 0.0559 | uni 0.0045 | cons 0.0359 | clip 0.0000 | ETA: 0.51h (3.70 steps/s)
+
+step 13160/20000 (65.8%) | total 0.0786 | recon 0.0782 | uni 0.0048 | cons 0.0078 | clip 0.0000 | ETA: 0.51h (3.70 steps/s)
+
+step 13180/20000 (65.9%) | total 0.0441 | recon 0.0436 | uni 0.0082 | cons -0.0000 | clip 0.0000 | ETA: 0.51h (3.71 steps/s)
+
+step 13200/20000 (66.0%) | total 0.0298 | recon 0.0296 | uni 0.0042 | cons -0.0000 | clip 0.0000 | ETA: 0.51h (3.71 steps/s)
+
+step 13220/20000 (66.1%) | total 0.1474 | recon 0.1468 | uni 0.0117 | cons -0.0000 | clip 0.0000 | ETA: 0.51h (3.71 steps/s)
+
+step 13240/20000 (66.2%) | total 0.0928 | recon 0.0918 | uni 0.0113 | cons 0.0232 | clip 0.0000 | ETA: 0.51h (3.72 steps/s)
+
+step 13260/20000 (66.3%) | total 0.0418 | recon 0.0414 | uni 0.0077 | cons -0.0000 | clip 0.0000 | ETA: 0.50h (3.72 steps/s)
+
+step 13280/20000 (66.4%) | total 0.0556 | recon 0.0552 | uni 0.0070 | cons -0.0000 | clip 0.0000 | ETA: 0.50h (3.72 steps/s)
+
+step 13300/20000 (66.5%) | total 0.0604 | recon 0.0599 | uni 0.0103 | cons -0.0000 | clip 0.0000 | ETA: 0.50h (3.72 steps/s)
+
+step 13320/20000 (66.6%) | total 0.1033 | recon 0.1027 | uni 0.0113 | cons -0.0000 | clip 0.0000 | ETA: 0.50h (3.73 steps/s)
+
+step 13340/20000 (66.7%) | total 0.0392 | recon 0.0389 | uni 0.0059 | cons -0.0000 | clip 0.0000 | ETA: 0.50h (3.73 steps/s)
+
+step 13360/20000 (66.8%) | total 0.0573 | recon 0.0569 | uni 0.0068 | cons -0.0000 | clip 0.0000 | ETA: 0.49h (3.73 steps/s)
+
+step 13380/20000 (66.9%) | total 0.1204 | recon 0.1194 | uni 0.0079 | cons 0.0295 | clip 0.0000 | ETA: 0.49h (3.73 steps/s)
+
+step 13400/20000 (67.0%) | total 0.1127 | recon 0.1123 | uni 0.0070 | cons -0.0000 | clip 0.0000 | ETA: 0.49h (3.74 steps/s)
+
+step 13420/20000 (67.1%) | total 0.0260 | recon 0.0250 | uni 0.0050 | cons 0.0350 | clip 0.0000 | ETA: 0.49h (3.74 steps/s)
+
+step 13440/20000 (67.2%) | total 0.0704 | recon 0.0697 | uni 0.0072 | cons 0.0161 | clip 0.0000 | ETA: 0.49h (3.74 steps/s)
+
+step 13460/20000 (67.3%) | total 0.0859 | recon 0.0848 | uni 0.0066 | cons 0.0344 | clip 0.0000 | ETA: 0.49h (3.74 steps/s)
+
+step 13480/20000 (67.4%) | total 0.0390 | recon 0.0386 | uni 0.0069 | cons -0.0000 | clip 0.0000 | ETA: 0.48h (3.75 steps/s)
+
+step 13500/20000 (67.5%) | total 0.0821 | recon 0.0815 | uni 0.0080 | cons 0.0145 | clip 0.0000 | ETA: 0.48h (3.75 steps/s)
+
+step 13520/20000 (67.6%) | total 0.0270 | recon 0.0262 | uni 0.0078 | cons 0.0228 | clip 0.0000 | ETA: 0.48h (3.75 steps/s)
+
+step 13540/20000 (67.7%) | total 0.0710 | recon 0.0708 | uni 0.0040 | cons -0.0000 | clip 0.0000 | ETA: 0.48h (3.75 steps/s)
+
+step 13560/20000 (67.8%) | total 0.0429 | recon 0.0420 | uni 0.0042 | cons 0.0350 | clip 0.0000 | ETA: 0.48h (3.76 steps/s)
+
+step 13580/20000 (67.9%) | total 0.0785 | recon 0.0777 | uni 0.0161 | cons -0.0000 | clip 0.0000 | ETA: 0.47h (3.76 steps/s)
+
+step 13600/20000 (68.0%) | total 0.1010 | recon 0.1002 | uni 0.0165 | cons -0.0000 | clip 0.0000 | ETA: 0.47h (3.76 steps/s)
+
+step 13620/20000 (68.1%) | total 0.0356 | recon 0.0349 | uni 0.0129 | cons -0.0000 | clip 0.0000 | ETA: 0.47h (3.76 steps/s)
+
+step 13640/20000 (68.2%) | total 0.0320 | recon 0.0316 | uni 0.0087 | cons -0.0000 | clip 0.0000 | ETA: 0.47h (3.77 steps/s)
+
+step 13660/20000 (68.3%) | total 0.0912 | recon 0.0909 | uni 0.0072 | cons -0.0000 | clip 0.0000 | ETA: 0.47h (3.77 steps/s)
+
+step 13680/20000 (68.4%) | total 0.0888 | recon 0.0880 | uni 0.0062 | cons 0.0252 | clip 0.0000 | ETA: 0.47h (3.77 steps/s)
+
+step 13700/20000 (68.5%) | total 0.0618 | recon 0.0616 | uni 0.0057 | cons -0.0000 | clip 0.0000 | ETA: 0.46h (3.78 steps/s)
+
+step 13720/20000 (68.6%) | total 0.0442 | recon 0.0438 | uni 0.0086 | cons -0.0000 | clip 0.0000 | ETA: 0.46h (3.78 steps/s)
+
+step 13740/20000 (68.7%) | total 0.0170 | recon 0.0167 | uni 0.0074 | cons -0.0000 | clip 0.0000 | ETA: 0.46h (3.78 steps/s)
+
+step 13760/20000 (68.8%) | total 0.0897 | recon 0.0895 | uni 0.0041 | cons -0.0000 | clip 0.0000 | ETA: 0.46h (3.78 steps/s)
+
+step 13780/20000 (68.9%) | total 0.0823 | recon 0.0815 | uni 0.0057 | cons 0.0253 | clip 0.0000 | ETA: 0.46h (3.79 steps/s)
+
+step 13800/20000 (69.0%) | total 0.1336 | recon 0.1331 | uni 0.0089 | cons -0.0000 | clip 0.0000 | ETA: 0.45h (3.79 steps/s)
+
+step 13820/20000 (69.1%) | total 0.0413 | recon 0.0398 | uni 0.0070 | cons 0.0576 | clip 0.0000 | ETA: 0.45h (3.79 steps/s)
+
+step 13840/20000 (69.2%) | total 0.1002 | recon 0.0988 | uni 0.0095 | cons 0.0443 | clip 0.0000 | ETA: 0.45h (3.79 steps/s)
+
+step 13860/20000 (69.3%) | total 0.0615 | recon 0.0610 | uni 0.0104 | cons -0.0000 | clip 0.0000 | ETA: 0.45h (3.80 steps/s)
+
+step 13880/20000 (69.4%) | total 0.0270 | recon 0.0266 | uni 0.0071 | cons -0.0000 | clip 0.0000 | ETA: 0.45h (3.80 steps/s)
+
+step 13900/20000 (69.5%) | total 0.0431 | recon 0.0426 | uni 0.0087 | cons -0.0000 | clip 0.0000 | ETA: 0.45h (3.80 steps/s)
+
+step 13920/20000 (69.6%) | total 0.0270 | recon 0.0267 | uni 0.0066 | cons -0.0000 | clip 0.0000 | ETA: 0.44h (3.80 steps/s)
+
+step 13940/20000 (69.7%) | total 0.0259 | recon 0.0256 | uni 0.0056 | cons -0.0000 | clip 0.0000 | ETA: 0.44h (3.81 steps/s)
+
+step 13960/20000 (69.8%) | total 0.1009 | recon 0.1002 | uni 0.0134 | cons -0.0000 | clip 0.0000 | ETA: 0.44h (3.81 steps/s)
+
+step 13980/20000 (69.9%) | total 0.0585 | recon 0.0556 | uni 0.0217 | cons 0.0907 | clip 0.0000 | ETA: 0.44h (3.81 steps/s)
+
+step 14000/20000 (70.0%) | total 0.0631 | recon 0.0623 | uni 0.0090 | cons 0.0192 | clip 0.0000 | ETA: 0.44h (3.82 steps/s)
+
+step 14020/20000 (70.1%) | total 0.0690 | recon 0.0685 | uni 0.0105 | cons -0.0000 | clip 0.0000 | ETA: 0.44h (3.81 steps/s)
+
+step 14040/20000 (70.2%) | total 0.0732 | recon 0.0728 | uni 0.0069 | cons -0.0000 | clip 0.0000 | ETA: 0.43h (3.81 steps/s)
+
+step 14060/20000 (70.3%) | total 0.0664 | recon 0.0651 | uni 0.0097 | cons 0.0419 | clip 0.0000 | ETA: 0.43h (3.81 steps/s)
+
+step 14080/20000 (70.4%) | total 0.0391 | recon 0.0382 | uni 0.0061 | cons 0.0314 | clip 0.0000 | ETA: 0.43h (3.82 steps/s)
+
+step 14100/20000 (70.5%) | total 0.0902 | recon 0.0897 | uni 0.0103 | cons -0.0000 | clip 0.0000 | ETA: 0.43h (3.82 steps/s)
+
+step 14120/20000 (70.6%) | total 0.0376 | recon 0.0353 | uni 0.0117 | cons 0.0874 | clip 0.0000 | ETA: 0.43h (3.82 steps/s)
+
+step 14140/20000 (70.7%) | total 0.0525 | recon 0.0512 | uni 0.0099 | cons 0.0401 | clip 0.0000 | ETA: 0.43h (3.83 steps/s)
+
+step 14160/20000 (70.8%) | total 0.1263 | recon 0.1251 | uni 0.0102 | cons 0.0338 | clip 0.0000 | ETA: 0.42h (3.83 steps/s)
+
+step 14180/20000 (70.9%) | total 0.0368 | recon 0.0364 | uni 0.0082 | cons -0.0000 | clip 0.0000 | ETA: 0.42h (3.83 steps/s)
+
+step 14200/20000 (71.0%) | total 0.0566 | recon 0.0553 | uni 0.0128 | cons 0.0313 | clip 0.0000 | ETA: 0.42h (3.83 steps/s)
+
+step 14220/20000 (71.1%) | total 0.1055 | recon 0.1043 | uni 0.0155 | cons 0.0248 | clip 0.0000 | ETA: 0.42h (3.84 steps/s)
+
+step 14240/20000 (71.2%) | total 0.0821 | recon 0.0809 | uni 0.0097 | cons 0.0353 | clip 0.0000 | ETA: 0.42h (3.84 steps/s)
+
+step 14260/20000 (71.3%) | total 0.0905 | recon 0.0881 | uni 0.0181 | cons 0.0714 | clip 0.0000 | ETA: 0.42h (3.84 steps/s)
+
+step 14280/20000 (71.4%) | total 0.0661 | recon 0.0657 | uni 0.0074 | cons -0.0000 | clip 0.0000 | ETA: 0.41h (3.84 steps/s)
+
+step 14300/20000 (71.5%) | total 0.0773 | recon 0.0765 | uni 0.0162 | cons -0.0000 | clip 0.0000 | ETA: 0.41h (3.85 steps/s)
+
+step 14320/20000 (71.6%) | total 0.0504 | recon 0.0497 | uni 0.0137 | cons -0.0000 | clip 0.0000 | ETA: 0.41h (3.85 steps/s)
+
+step 14340/20000 (71.7%) | total 0.0567 | recon 0.0544 | uni 0.0105 | cons 0.0932 | clip 0.0000 | ETA: 0.41h (3.85 steps/s)
+
+step 14360/20000 (71.8%) | total 0.0456 | recon 0.0450 | uni 0.0103 | cons -0.0000 | clip 0.0000 | ETA: 0.41h (3.85 steps/s)
+
+step 14380/20000 (71.9%) | total 0.0278 | recon 0.0270 | uni 0.0100 | cons 0.0147 | clip 0.0000 | ETA: 0.40h (3.86 steps/s)
+
+step 14400/20000 (72.0%) | total 0.1016 | recon 0.0999 | uni 0.0098 | cons 0.0619 | clip 0.0000 | ETA: 0.40h (3.86 steps/s)
+
+step 14420/20000 (72.1%) | total 0.0230 | recon 0.0227 | uni 0.0058 | cons -0.0000 | clip 0.0000 | ETA: 0.40h (3.86 steps/s)
+
+step 14440/20000 (72.2%) | total 0.0997 | recon 0.0993 | uni 0.0091 | cons -0.0000 | clip 0.0000 | ETA: 0.40h (3.86 steps/s)
+
+step 14460/20000 (72.3%) | total 0.0572 | recon 0.0567 | uni 0.0100 | cons -0.0000 | clip 0.0000 | ETA: 0.40h (3.87 steps/s)
+
+step 14480/20000 (72.4%) | total 0.0589 | recon 0.0581 | uni 0.0059 | cons 0.0253 | clip 0.0000 | ETA: 0.40h (3.87 steps/s)
+
+step 14500/20000 (72.5%) | total 0.0358 | recon 0.0330 | uni 0.0128 | cons 0.1057 | clip 0.0000 | ETA: 0.39h (3.87 steps/s)
+
+step 14520/20000 (72.6%) | total 0.0375 | recon 0.0370 | uni 0.0095 | cons -0.0000 | clip 0.0000 | ETA: 0.39h (3.87 steps/s)
+
+step 14540/20000 (72.7%) | total 0.0444 | recon 0.0429 | uni 0.0056 | cons 0.0601 | clip 0.0000 | ETA: 0.39h (3.87 steps/s)
+
+step 14560/20000 (72.8%) | total 0.0194 | recon 0.0190 | uni 0.0075 | cons -0.0000 | clip 0.0000 | ETA: 0.39h (3.88 steps/s)
+
+step 14580/20000 (72.9%) | total 0.0435 | recon 0.0431 | uni 0.0081 | cons -0.0000 | clip 0.0000 | ETA: 0.39h (3.88 steps/s)
+
+step 14600/20000 (73.0%) | total 0.0272 | recon 0.0268 | uni 0.0073 | cons -0.0000 | clip 0.0000 | ETA: 0.39h (3.88 steps/s)
+
+Received signal 2, saving data and exiting gracefully...

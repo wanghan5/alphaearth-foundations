@@ -18,6 +18,7 @@ def _get_shm_total_gb() -> Optional[float]:
     return usage.total / (1024 ** 3)
 
 
+<<<<<<< HEAD
 def _set_sharing_strategy(strategy: Optional[str]) -> None:
     if not strategy:
         return
@@ -28,6 +29,8 @@ def _set_sharing_strategy(strategy: Optional[str]) -> None:
         print(f"Failed to set sharing strategy '{strategy}': {exc}")
 
 
+=======
+>>>>>>> main
 def _create_dataloader(
     *,
     data_dir: str,
@@ -78,7 +81,10 @@ def create_olmoearth_dataloader_with_autotune(
     pin_memory: bool,
     persistent_workers: Optional[bool],
     prefetch_factor: int,
+<<<<<<< HEAD
     sharing_strategy: Optional[str],
+=======
+>>>>>>> main
 ) -> Tuple[torch.utils.data.DataLoader, int, int]:
     shm_total_gb = _get_shm_total_gb()
     if shm_total_gb is not None and shm_total_gb < shm_min_gb:
@@ -88,10 +94,13 @@ def create_olmoearth_dataloader_with_autotune(
         )
         pin_memory = False
         prefetch_factor = max(1, min(prefetch_factor, 2))
+<<<<<<< HEAD
         if sharing_strategy is None:
             sharing_strategy = "file_system"
 
     _set_sharing_strategy(sharing_strategy)
+=======
+>>>>>>> main
 
     if not auto_tune:
         return (
@@ -117,7 +126,10 @@ def create_olmoearth_dataloader_with_autotune(
     tuned_batch_size = batch_size
     tuned_num_workers = num_workers
     last_error: Optional[Exception] = None
+<<<<<<< HEAD
     sharing_strategy_applied = sharing_strategy is not None
+=======
+>>>>>>> main
     while tuned_batch_size >= 1:
         try:
             dataloader = _create_dataloader(
@@ -147,11 +159,14 @@ def create_olmoearth_dataloader_with_autotune(
             error_msg = str(exc).lower()
             print(f"Auto-tune attempt failed: {exc}")
             if tuned_num_workers > 0 and ("shm" in error_msg or "shared memory" in error_msg):
+<<<<<<< HEAD
                 if not sharing_strategy_applied:
                     sharing_strategy = "file_system"
                     _set_sharing_strategy(sharing_strategy)
                     sharing_strategy_applied = True
                     continue
+=======
+>>>>>>> main
                 tuned_num_workers = max(0, tuned_num_workers // 2)
                 print(f"Reducing num_workers to {tuned_num_workers} due to shared memory pressure.")
                 continue
@@ -232,6 +247,7 @@ def main():
         help="Number of batches prefetched by each worker",
     )
     parser.add_argument(
+<<<<<<< HEAD
         "--grad_accum_steps",
         type=int,
         default=1,
@@ -245,6 +261,8 @@ def main():
         help="torch.multiprocessing sharing strategy for CPU tensors",
     )
     parser.add_argument(
+=======
+>>>>>>> main
         "--max_steps",
         type=int,
         default=None,
@@ -353,7 +371,10 @@ def main():
         pin_memory=args.pin_memory,
         persistent_workers=args.persistent_workers,
         prefetch_factor=args.prefetch_factor,
+<<<<<<< HEAD
         sharing_strategy=args.sharing_strategy,
+=======
+>>>>>>> main
     )
     
     dataset_size = len(dataloader.dataset)

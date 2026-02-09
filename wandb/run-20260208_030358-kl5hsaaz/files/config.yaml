@@ -1,0 +1,91 @@
+_wandb:
+    value:
+        cli_version: 0.24.2
+        e:
+            sufbvpq1zdg7yls1wuzs68j9k613vrci:
+                args:
+                    - --data_dir
+                    - ./data/olmoearth_pretrain_dataset/10_landsat_monthly
+                    - --batch_size
+                    - "8"
+                    - --num_workers
+                    - "1"
+                    - --shm_min_gb
+                    - "64"
+                    - --auto_tune
+                    - --prefetch_factor
+                    - "1"
+                    - --no-pin_memory
+                    - --patch_size
+                    - "256"
+                    - --max_steps
+                    - "20000"
+                    - --output_dir
+                    - ./outputs_olmoearth
+                    - --cache_index
+                    - --cache_dir
+                    - ./cache
+                    - --use_wandb
+                    - --wandb_project
+                    - alpha-earth-foundations
+                    - --wandb_run_name
+                    - second-2026-02-08
+                codePath: src/alphaearth/run_train_olmoearth_dataset.py
+                codePathLocal: src/alphaearth/run_train_olmoearth_dataset.py
+                cpu_count: 64
+                cpu_count_logical: 128
+                cudaVersion: "12.8"
+                disk:
+                    /:
+                        total: "5710154997760"
+                        used: "4187195969536"
+                email: wanghan23@gmail.com
+                executable: /root/miniconda3/envs/aef/bin/python
+                git:
+                    commit: dd4fde1a90f75a48c3f61933ed92c8bfda56d942
+                    remote: https://github.com/wanghan5/alphaearth-foundations.git
+                gpu: NVIDIA A100-SXM4-80GB
+                gpu_count: 1
+                gpu_nvidia:
+                    - architecture: Ampere
+                      cudaCores: 6912
+                      memoryTotal: "85899345920"
+                      name: NVIDIA A100-SXM4-80GB
+                      uuid: GPU-2dc79ed1-36fd-ecff-f15b-3194ccde28e9
+                host: ji-jupyter-152162838773781504-master-0
+                memory:
+                    total: "1081820299264"
+                os: Linux-5.4.0-173-generic-x86_64-with-glibc2.35
+                program: /root/alphaearth-foundations/src/alphaearth/run_train_olmoearth_dataset.py
+                python: CPython 3.12.0
+                root: /root/alphaearth-foundations
+                startedAt: "2026-02-08T03:03:58.047255Z"
+                writerId: sufbvpq1zdg7yls1wuzs68j9k613vrci
+        m: []
+        python_version: 3.12.0
+        t:
+            "1":
+                - 1
+            "2":
+                - 1
+            "3":
+                - 2
+                - 13
+                - 16
+                - 61
+            "4": 3.12.0
+            "5": 0.24.2
+            "12": 0.24.2
+            "13": linux-x86_64
+batch_size:
+    value: 8
+dataset_size:
+    value: 128977
+device:
+    value: cuda
+learning_rate:
+    value: 0.0001
+max_steps:
+    value: 1000
+model_size:
+    value: unknown

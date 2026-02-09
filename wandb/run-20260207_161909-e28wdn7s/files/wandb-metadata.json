@@ -1,0 +1,68 @@
+{
+  "os": "Linux-5.4.0-173-generic-x86_64-with-glibc2.35",
+  "python": "CPython 3.12.0",
+  "startedAt": "2026-02-07T16:19:09.898229Z",
+  "args": [
+    "--data_dir",
+    "./data/olmoearth_pretrain_dataset/10_landsat_monthly",
+    "--batch_size",
+    "2",
+    "--num_workers",
+    "2",
+    "--shm_min_gb",
+    "64",
+    "--auto_tune",
+    "--prefetch_factor",
+    "1",
+    "--no-pin_memory",
+    "--patch_size",
+    "256",
+    "--max_steps",
+    "20000",
+    "--output_dir",
+    "./outputs_olmoearth",
+    "--cache_index",
+    "--cache_dir",
+    "./cache",
+    "--use_wandb",
+    "--wandb_project",
+    "alpha-earth-foundations",
+    "--wandb_run_name",
+    "first-2026-02-08"
+  ],
+  "program": "/root/alphaearth-foundations/src/alphaearth/run_train_olmoearth_dataset.py",
+  "codePath": "src/alphaearth/run_train_olmoearth_dataset.py",
+  "codePathLocal": "src/alphaearth/run_train_olmoearth_dataset.py",
+  "git": {
+    "remote": "https://github.com/wanghan5/alphaearth-foundations.git",
+    "commit": "dd4fde1a90f75a48c3f61933ed92c8bfda56d942"
+  },
+  "email": "wanghan23@gmail.com",
+  "root": "/root/alphaearth-foundations",
+  "host": "ji-jupyter-152162838773781504-master-0",
+  "executable": "/root/miniconda3/envs/aef/bin/python",
+  "cpu_count": 64,
+  "cpu_count_logical": 128,
+  "gpu": "NVIDIA A100-SXM4-80GB",
+  "gpu_count": 1,
+  "disk": {
+    "/": {
+      "total": "5710154997760",
+      "used": "4188230172672"
+    }
+  },
+  "memory": {
+    "total": "1081820299264"
+  },
+  "gpu_nvidia": [
+    {
+      "name": "NVIDIA A100-SXM4-80GB",
+      "memoryTotal": "85899345920",
+      "cudaCores": 6912,
+      "architecture": "Ampere",
+      "uuid": "GPU-2dc79ed1-36fd-ecff-f15b-3194ccde28e9"
+    }
+  ],
+  "cudaVersion": "12.8",
+  "writerId": "n3l4jvsfezwrjhyfbvuboi8ls0kbchga"
+}
